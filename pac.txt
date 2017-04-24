@@ -28,7 +28,14 @@ var rules = [
   
   //上网
   //"||twitter.com",//启用这条会命中Twitter的广告
+  "blog.xuite.net",
+  "vlog.xuite.net",
+  "platform.twitter.com",
+  "api.twitter.com",
+  "mobile.twitter.com",
   "\/\/twitter.com",
+  "||youtube-nocookie.com",
+  "keybase.io",
   ".shadowsocks.org",
   "||shadowsocks.org",
   ".instagram.com",
