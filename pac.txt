@@ -4,10 +4,12 @@
 var proxy = "__PROXY__";
 
 var rules = [
+  "herehard.tv",
+
   //工作
   "www.bea.com",
   "cxf.apache.org",
-  //"activemq.apache.org",
+  "activemq.apache.org",
   "www.springframework.org",
   "repository.apache.org",
   
@@ -28,6 +30,11 @@ var rules = [
   
   //上网
   //"||twitter.com",//启用这条会命中Twitter的广告
+  "||phncdn.com",
+  "rdtcdn.com",
+  "redtube.com",
+  ".t.co",
+  "||t.co",
   "blog.xuite.net",
   "vlog.xuite.net",
   "platform.twitter.com",
