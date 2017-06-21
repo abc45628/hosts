@@ -1,14 +1,79 @@
-#游戏start
+#0.0.0.2 bzclk.baidu.com
+184.50.87.51 uplaypc-s-ubisoft.cdn.ubi.com
+#52.218.20.140 s3.amazonaws.com
+#steam
+104.115.209.150 steamcommunity.com
+104.115.209.150 store.steampowered.com
+#ea
 223.119.50.145 eaassets-a.akamaihd.net
 205.252.238.126 lvlt.cdn.ea.com
 223.119.50.145 origin-a.akamaihd.net
-#游戏end
-#迅雷看看测试start
+
+0.0.0.2 pagead2.googlesyndication.com
+
+#xunlei test
+#0.0.0.2 admin.static.xl9.xunlei.com
+#0.0.0.2 plugin.xl7.xunlei.com
+#0.0.0.2 static-xl9-ssl.xunlei.com
+
+0.0.0.2 v2.boxcfg.niu.xunlei.com
+0.0.0.2 dy-niu-ssl.xunlei.com
+0.0.0.2 aax.amazon-adsystem.com
+0.0.0.2 c.amazon-adsystem.com
+0.0.0.2 tags.tiqcdn.com
+0.0.0.2 t.df77.com
+0.0.0.2 www.qchannel03.cn
+0.0.0.2 cre.dp.sina.cn
+0.0.0.2 cre-dp.sina.cn
+0.0.0.2 sax9.sina.com.cn
+0.0.0.2 sax8.sina.com.cn
+0.0.0.2 sax7.sina.com.cn
+0.0.0.2 sax6.sina.com.cn
+0.0.0.2 sax5.sina.com.cn
+0.0.0.2 sax4.sina.com.cn
+0.0.0.2 sax3.sina.com.cn
+0.0.0.2 sax2.sina.com.cn
+0.0.0.2 sax1.sina.com.cn
+0.0.0.2 sax0.sina.com.cn
+0.0.0.2 saxs.sina.com.cn
+0.0.0.2 sax.sina.cn
+0.0.0.2 saxs.sina.cn
+0.0.0.2 sbeacon.sina.com.cn
+0.0.0.2 ent.mb.baidu.com
+0.0.0.2 pmb1.tj.ali213.net
+0.0.0.2 pmb2.tj.ali213.net
+0.0.0.2 s104.cnzz.com
+0.0.0.2 txt.go.sohu.com
+0.0.0.2 i.go.sohu.com
+0.0.0.2 pv.sohu.com
+0.0.0.2 s.go.sohu.com
+0.0.0.2 ad5.ctrmi.com
 0.0.0.2 cloud.v.xunlei.com
 0.0.0.2 v.xunlei.com
-#迅雷看看测试end
-0.0.0.2 pagead2.googlesyndication.com
-#0.0.0.2 bzclk.baidu.com
+0.0.0.2 module.youku.com
+0.0.0.2 bsv.atm.youku.com
+0.0.0.2 v2html.atm.youku.com
+0.0.0.2 cmstool.youku.com
+0.0.0.2 log.mmstat.com
+0.0.0.2 g3.letv.com
+0.0.0.2 fz.letv.com
+0.0.0.2 ark.letv.com
+0.0.0.2 letv.irs01.com
+0.0.0.2 letv.ipdx.cn.miaozhen.com
+0.0.0.2 ads.vamaker.com
+0.0.0.2 cdn.vamaker.com
+0.0.0.2 www.crc01.co
+0.0.0.2 setup.stat.v.xunlei.com
+0.0.0.2 setup.xmp.stat.kankan.com
+0.0.0.2 user.xmp.stat.kankan.com
+0.0.0.2 p1.wsgcch.com
+0.0.0.2 p1.sfyzz.com
+0.0.0.2 www.crc6789.life
+0.0.0.2 p.urlpic.club
+0.0.0.2 dio889.net
+0.0.0.2 assets.dwstatic.com
+0.0.0.2 sc.jiaheyonggu.com
+0.0.0.2 y.5125129.com
 0.0.0.2 2.win7china.com
 0.0.0.2 xyx.kuai8.com
 0.0.0.2 xmlconf.rcv.sandai.net
@@ -274,7 +339,6 @@
 0.0.0.2 iflow.uczzd.com
 0.0.0.2 iflow.uczzd.cn
 0.0.0.2 m.uczzd.cn
-0.0.0.2 image.uczzd.cn
 0.0.0.2 api.mp.uc.cn
 0.0.0.2 log.cs.pp.cn
 0.0.0.2 applog.uc.cn
@@ -301,7 +365,6 @@
 0.0.0.2 static.getclicky.com
 0.0.0.2 s25.cnzz.com
 0.0.0.2 s73.cnzz.com
-0.0.0.2 images.sohu.com
 0.0.0.2 api.zol.com
 0.0.0.2 pic.zol-img.com.cn
 0.0.0.2 dynamic.zol.com.cn
@@ -607,5 +670,3 @@
 0.0.0.2 js.users.51.la
 0.0.0.2 www.taxuo.com
 0.0.0.2 boxtg3.241803.com
-
-
