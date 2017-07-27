@@ -4,15 +4,16 @@
 var proxy = "__PROXY__";
 
 var rules = [
+  "||textfree.us",
   //"||www.humblebundle.com",
 
   //游戏
   //uplay
-  
-  //gta
-  "||prod.ros.rockstargames.com",
-  "||conductor-prod.ros.rockstargames.com",
-  "||auth-prod.ros.rockstargames.com",
+  "||msr-api-ubiservices.ubi.com",
+  "||lb-upc-dmx.ubisoft.com",
+  "||public-ubiservices.ubi.com",
+  "||api-ubiservices.ubi.com",
+  "||ubisoft-uplay-savegames.s3.amazonaws.com",
   
   //工作
   "||activemq.apache.org/",
@@ -21,11 +22,32 @@ var rules = [
   "||www.springframework.org/",
   
   //上网
+  "||steamsignature.com/",
+  "||i2.ceimg.com/",
+  "||code.jquery.com/",
+  "||www.tokyodoll.tv/",
+  "||ghostreconnetwork.ubi.com/",
+  "||onedrive.live.com/",
+  "||forums.ubi.com/",
+  "||p.urlpic.club/",
+  "||zh.uncyclopedia.info/",
+  "||www.dl-laby.jp/",
+  "||www.gmail.com/",
+  "||googlecode.com/",
+  "||i.imgur.com/",
+  "||media.tumblr.com/",
+  "||zh.greatfire.org",
+  "||jigidi-images.s3.amazonaws.com",
+  "||www.sockscap64.com",
+  "||userscripts.org",
+  "||gist.github.com",
   "||fiddle.jshell.net",
   "||jsfiddle.net",
   "||developer.chrome.com",
   "||blogblog.com",
   "||blogger.com",
+  "||zh-yue.wikipedia.org",
+  "||uz.wikipedia.org",
   "||zh.wikipedia.org",
   "||zh.m.wikipedia.org",
   "||www.liveperson.com",
@@ -33,6 +55,8 @@ var rules = [
   "||piring.com",
   "||kyofun.com",
   "||blogspot.com",
+  "||blogspot.tw",
+  "||blogspot.sg",
   "||www.indiegalacdn.com",
   "||imagizer.imageshack.com",
   "||imgme.me/",
@@ -40,7 +64,6 @@ var rules = [
   "||cryptii.com/",
   "||maxcdn.bootstrapcdn.com/",
   "||steamgifts.com/",
-  "||amazonaws.com/",
   "||ytimg.com/",
   "||ggpht.com/",
   "||twimg.com/",
@@ -52,6 +75,7 @@ var rules = [
   "||googlevideo.com/",
   "||google.com/",
   "||google.com.hk/",
+  "||google.com.sg/",
   "||gstatic.com/",
   "||googleapis.com/",
   "||googleusercontent.com/",
