@@ -17,7 +17,7 @@
 
 #¾©¶«base
 0.0.0.2 bdsp.x.jd.com
-0.0.0.2 ccc-x.jd.com
+#0.0.0.2 ccc-x.jd.com
 0.0.0.2 cm.jd.com
 0.0.0.2 im-x.jd.com
 0.0.0.2 img-x.jd.com
@@ -25,6 +25,44 @@
 0.0.0.2 wn.x.jd.com
 0.0.0.2 x.jd.com
 
+
+
+0.0.0.2 ppurifier.game.xiaomi.com
+0.0.0.2 app.migc.wali.com
+0.0.0.2 data.game.xiaomi.com
+0.0.0.2 migcreport.g.mi.com
+0.0.0.2 mis.migc.xiaomi.com
+0.0.0.2 app.migc.xiaomi.com
+0.0.0.2 devs.data.mob.com
+0.0.0.2 m.data.mob.com
+0.0.0.2 api-log-analytics.cloud.toast.com
+0.0.0.2 api-campaign-analytics.cloud.toast.com
+0.0.0.2 api-webrp-analytics.cloud.toast.com
+0.0.0.2 177484.engine.mobileapptracking.com
+0.0.0.2 amdc.m.taobao.com
+0.0.0.2 embedlog.duiba.com.cn
+0.0.0.2 pingma.qq.com
+0.0.0.2 masdk.3g.qq.com
+0.0.0.2 oth.eve.mdt.qq.com
+0.0.0.2 oth.str.mdt.qq.com
+0.0.0.2 s24.cnzz.com
+0.0.0.2 bztzl.com
+0.0.0.2 wbapp.mobile.sina.cn
+0.0.0.2 dp2.im.weibo.cn
+0.0.0.2 dp.im.weibo.cn
+0.0.0.2 u1.img.mobile.sina.cn
+0.0.0.2 sdkapp.mobile.sina.cn
+0.0.0.2 ar.umeng.com
+0.0.0.2 tieba.hanyou.com
+0.0.0.2 tieba.hanyou.com
+0.0.0.2 huatuospeed.huatuo.qq.com
+0.0.0.2 report.huatuo.qq.com
+0.0.0.2 cfg.imtt.qq.com
+0.0.0.2 soft.tbs.imtt.qq.com
+0.0.0.2 info.gamecenter.qq.com
+0.0.0.2 adash.m.taobao.com
+0.0.0.2 js797.nbhxgjz.com
+0.0.0.2 js797.neemzksw.com
 0.0.0.2 img1.ajzhi.com
 0.0.0.2 www.sytcyf.com
 0.0.0.2 vol.guangyujm2.com
