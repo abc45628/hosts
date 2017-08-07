@@ -1,8 +1,10 @@
-#0.0.0.2 bzclk.baidu.com
+#0.0.0.2 bzclk.baidu.com #百度首条记录
+0.0.0.2 adfarm.mediaplex.com #paypal邮件
 #52.218.20.140 s3.amazonaws.com
 #steam
-#104.115.209.150 steamcommunity.com
-#104.115.209.150 store.steampowered.com
+23.222.61.158 store.steampowered.com
+23.222.61.158 steamcommunity.com
+
 #ea
 223.119.50.145 eaassets-a.akamaihd.net
 205.252.238.126 lvlt.cdn.ea.com
@@ -27,6 +29,15 @@
 
 
 
+
+#0.0.0.2 fans.bestvogue.com
+0.0.0.2 pay.t6k.co
+0.0.0.2 js8363.guangzizai.com
+0.0.0.2 u349036.nr1234.com
+0.0.0.2 aa.zhichi08.com
+0.0.0.2 13929.url.246546.com
+0.0.0.2 cp.jz5u.net
+0.0.0.2 g1.dn7788.com
 0.0.0.2 ppurifier.game.xiaomi.com
 0.0.0.2 app.migc.wali.com
 0.0.0.2 data.game.xiaomi.com
@@ -544,7 +555,6 @@
 0.0.0.2 stat.zol.com.cn
 0.0.0.2 tracking.ad-survey.com
 0.0.0.2 v.admaster.com.cn
-0.0.0.2 adfarm.mediaplex.com
 0.0.0.2 m981.oadz.com
 0.0.0.2 zdw.w8.com.cn
 0.0.0.2 static1.bfdcdn.com

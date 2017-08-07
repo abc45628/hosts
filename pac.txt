@@ -4,10 +4,8 @@
 var proxy = "__PROXY__";
 
 var rules = [
-  "||textfree.us",
-  //"||www.humblebundle.com",
+  "||www.humblebundle.com",
 
-  //游戏
   //uplay
   "||msr-api-ubiservices.ubi.com",
   "||lb-upc-dmx.ubisoft.com",
@@ -22,6 +20,13 @@ var rules = [
   "||www.springframework.org/",
   
   //上网
+  "||imagizer.imageshack.com",
+  "||textfree.us",
+  "||www.android.com/",
+  "||blog.google/",
+  "||translate.googleblog.com/",
+  "||humblebundle.imgix.net/",
+  "||github-production-release-asset-2e65be.s3.amazonaws.com/",
   "||steamsignature.com/",
   "||i2.ceimg.com/",
   "||code.jquery.com/",
