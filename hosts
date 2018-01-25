@@ -1,3 +1,4 @@
+127.0.0.1 l.cn
 #watch
 0.0.0.1 t7z.cupid.iqiyi.com #∞Æ∆Ê“’
 0.0.0.1 common.duapps.com
@@ -6,7 +7,35 @@
 0.0.0.1 pasta.esfile.duapps.com
 0.0.0.1 fb.xk.miui.com
 #dead
-#0.0.0.1 www.adumen.com
+0.0.0.1 fragment.firefoxchina.cn
+0.0.0.1 cee1.iteye.com
+0.0.0.1 cee2.iteye.com
+0.0.0.1 cloudcdn.dopa.com
+0.0.0.1 bd1.dopa.com
+0.0.0.1 a1.dnbizcdn.com
+0.0.0.1 www.adumen.com
+0.0.0.1 imgg.traffic-media.co
+0.0.0.1 imgg-cdn.mgid.com
+0.0.0.1 c.traffic-media.co
+0.0.0.1 servicer.traffic-media.co
+0.0.0.1 jsc.marketgid.com
+0.0.0.1 c.mgid.com
+0.0.0.1 cdn.mgid.com
+0.0.0.1 cm.mgid.com
+0.0.0.1 servicer.mgid.com
+0.0.0.1 jsc.mgid.com
+0.0.0.1 www.2233777.com
+0.0.0.1 atiws.aipai.com
+0.0.0.1 1.qtmojo.com
+0.0.0.1 www.qdxrhg.com
+0.0.0.1 static.gg.uuu9.com
+0.0.0.1 survey.news.ifeng.com
+0.0.0.1 as.g4.ifeng.com
+0.0.0.1 stadig.ifeng.com
+0.0.0.1 sgfpbimg.ifengimg.com
+0.0.0.1 cdn.carbonads.com
+0.0.0.1 stat.zol.com.cn
+0.0.0.1 tfp.tadseeker.com
 0.0.0.1 shili.downxia.com
 0.0.0.1 r.dmp.sina.cn
 0.0.0.1 zyz.91friend.com
@@ -56,7 +85,6 @@
 0.0.0.1 track.uc.cn
 0.0.0.1 api.mixpanel.com
 0.0.0.1 huichuan.sm.cn
-0.0.0.1 log.mmstat.com
 0.0.0.1 img.en25.com
 0.0.0.1 s1325.t.eloqua.com
 0.0.0.1 a240828791.cdn.optimizely.com
@@ -123,10 +151,8 @@
 0.0.0.1 update.sdk.jiguang.cn
 0.0.0.1 logs.mkdata.top
 0.0.0.1 android.bugly.qq.com
-#0.0.0.1 v.gdt.qq.com
 0.0.0.1 mi.gdt.qq.com
 0.0.0.1 sdk.e.qq.com
-#0.0.0.1 c.gdt.qq.com
 0.0.0.1 zy.nszmz.com
 0.0.0.1 stat.pchome.net
 0.0.0.1 js-1.pchome.net
@@ -284,14 +310,6 @@
 0.0.0.1 a.irs01.com
 0.0.0.1 adserver.juicyads.com
 0.0.0.1 js.passport.qihucdn.com
-0.0.0.1 s1.qhres.com
-0.0.0.1 s2.qhres.com
-0.0.0.1 s3.qhres.com
-0.0.0.1 s4.qhres.com
-0.0.0.1 s5.qhres.com
-0.0.0.1 s6.qhres.com
-0.0.0.1 s7.qhres.com
-0.0.0.1 s8.qhres.com
 0.0.0.1 valf.atm.youku.com
 0.0.0.1 adash.man.aliyuncs.com
 0.0.0.1 adashx.m.taobao.com
@@ -391,6 +409,7 @@
 0.0.0.1 msg.umengcloud.com
 0.0.0.1 alog.umengcloud.com
 0.0.0.1 uop.umeng.com
+0.0.0.1 pr.umeng.com
 0.0.0.1 ar.umeng.com
 0.0.0.1 alog.umeng.com
 0.0.0.1 a.cnzz.com
@@ -634,3 +653,4 @@
 0.0.0.1 zs9.cnzz.com
 0.0.0.1 zvs1.cnzz.com
 0.0.0.1 zvs2.cnzz.com
+0.0.0.1 js.adm.cnzz.net
