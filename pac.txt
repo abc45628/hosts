@@ -6,7 +6,15 @@ var proxy = "__PROXY__";
 var rules = [
     "@@syndication.twitter.com",
     
-    "||cloudfront-labs.amazonaws.com",
+    //"||steamcommunity.com",
+    "||postimgs.org",
+    "||postimg.org",
+    "||na.static.mega.co.nz",
+    "||mega.nz",
+    "||www.netlimiter.com",
+    "||www.zzcloud.me",
+    "||s3.picacomic.com",
+    "||ss.ishadowx.net",
     "||bloomberg.com",
     "||vignette2.wikia.nocookie.net",
     "||www.wnacg.com",
@@ -30,7 +38,7 @@ var rules = [
     "||lb-upc-dmx.ubisoft.com",
     "||public-ubiservices.ubi.com",
     "||api-ubiservices.ubi.com",
-    "||ubisoft-uplay-savegames.s3.amazonaws.com",
+    
 
     //工作
     "||jquery.com",
@@ -44,13 +52,12 @@ var rules = [
 
     //上网
     "||connect.facebook.net",
-    "||t.cn",
     "||t.me",
     "||l.instagram.com",
     "||scontent-sin6-2.cdninstagram.com",
     "||www.instagram.com",
     "||www.steamcardexchange.net",
-    "||www.bing.com/translator/api/Translate",
+    //"||www.bing.com/translator/api/Translate",
     "||developer.android.com",
     "||vk.com",
     "||docs.mongoing.com",
@@ -65,7 +72,6 @@ var rules = [
     "||imagizer.imageshack.com",
     "||textfree.us",
     "||humblebundle.imgix.net",
-    "||github-production-release-asset-2e65be.s3.amazonaws.com/",
     "||steamsignature.com",
     "||code.jquery.com",
     "||www.tokyodoll.tv",
@@ -80,14 +86,12 @@ var rules = [
     "||s.imgur.com",
     "||i.imgur.com",
     "||media.tumblr.com",
-    "||zh.greatfire.org",
-    "||jigidi-images.s3.amazonaws.com",
+    "||zh.greatfire.org",    
     "||www.sockscap64.com",
     "||userscripts.org",
     "||gist.github.com",
     "||fiddle.jshell.net",
     "||jsfiddle.net",
-    "||developer.chrome.com",
     "||blogblog.com",
     "||blogger.com",
     "||www.liveperson.com",
@@ -100,19 +104,35 @@ var rules = [
     "||qlshw.org",
     "||cryptii.com",
     "||maxcdn.bootstrapcdn.com",
-    "||steamgifts.com",
-    "||ggpht.com",
-    "||twimg.com",
-    "||twitter.com",
+    //"||steamgifts.com",
+    
+    
     "||cloudfront.net",
     
-    //facebook
+    //开发
+    "||docs.telerik.com",
+    
+    //amazonaws
+    "||s3.amazonaws.com",
+    "||jigidi-images.s3.amazonaws.com",
+    "||s3-us-west-2.amazonaws.com",
+    "||github-production-release-asset-2e65be.s3.amazonaws.com/",
+    "||ubisoft-uplay-savegames.s3.amazonaws.com",
+    "||telerik-fiddler.s3.amazonaws.com",
+    "||cloudfront-labs.amazonaws.com",
+    
+    //社交
     "||fbcdn.net",
     "||facebook.com",
+    "||twimg.com",
+    "||twitter.com",
 
     //telegram
     "||t.me",
     "||telegram.org",
+    
+    //微软
+    "onedrive.live.com",
 
     //维基百科
     "||zh-yue.wikipedia.org",
@@ -121,6 +141,8 @@ var rules = [
     "||zh.m.wikipedia.org",
 
     //谷歌
+    "||apis.google.com",
+    "||ggpht.com",
     "||www.android.com",
     "||blog.google",
     "||googleblog.com",
@@ -138,11 +160,17 @@ var rules = [
     "||googlevideo.com",
     "||www.gmail.com",
     "||blog.chromium.org",
-
+    "||bugs.chromium.org",
+    "||crbug.com",
+    "||developer.chrome.com",
+    "||www.chromestatus.com",
+    
     //google-blogspot
     "||blogspot.com",
     "||blogspot.tw",
     "||blogspot.sg",
+    "||blogspot.my",
+    "||blogspot.in",
 
     //google-youtube
     "||youtube.com",
@@ -191,7 +219,7 @@ function extend(subclass, superclass, definition) {
         subclass.prototype.constructor = superclass;
         for (var i in definition) {
             if (definition.hasOwnProperty(i)) {
-                subclass.prototype[i] = definition[i];
+  subclass.prototype[i] = definition[i];
             }
         }
     }
@@ -259,42 +287,42 @@ extend(ActiveFilter, Filter, {
         if (this.domainSource) {
             var source = this.domainSource;
             if (!this.domainSourceIsUpperCase) {
-                source = source.toUpperCase();
+  source = source.toUpperCase();
             }
             var list = source.split(this.domainSeparator);
             if (list.length == 1 && (list[0]).charAt(0) != "~") {
-                domains = createDict();
-                domains[""] = false;
-                if (this.ignoreTrailingDot) {
-                    list[0] = list[0].replace(/\.+$/, "");
-                }
-                domains[list[0]] = true;
+  domains = createDict();
+  domains[""] = false;
+  if (this.ignoreTrailingDot) {
+      list[0] = list[0].replace(/\.+$/, "");
+  }
+  domains[list[0]] = true;
             }
             else {
-                var hasIncludes = false;
-                for (var i = 0; i < list.length; i++) {
-                    var domain = list[i];
-                    if (this.ignoreTrailingDot) {
-                        domain = domain.replace(/\.+$/, "");
-                    }
-                    if (domain == "") {
-                        continue;
-                    }
-                    var include;
-                    if (domain.charAt(0) == "~") {
-                        include = false;
-                        domain = domain.substr(1);
-                    }
-                    else {
-                        include = true;
-                        hasIncludes = true;
-                    }
-                    if (!domains) {
-                        domains = createDict();
-                    }
-                    domains[domain] = include;
-                }
-                domains[""] = !hasIncludes;
+  var hasIncludes = false;
+  for (var i = 0; i < list.length; i++) {
+      var domain = list[i];
+      if (this.ignoreTrailingDot) {
+          domain = domain.replace(/\.+$/, "");
+      }
+      if (domain == "") {
+          continue;
+      }
+      var include;
+      if (domain.charAt(0) == "~") {
+          include = false;
+          domain = domain.substr(1);
+      }
+      else {
+          include = true;
+          hasIncludes = true;
+      }
+      if (!domains) {
+          domains = createDict();
+      }
+      domains[domain] = include;
+  }
+  domains[""] = !hasIncludes;
             }
             this.domainSource = null;
         }
@@ -317,11 +345,11 @@ extend(ActiveFilter, Filter, {
         docDomain = docDomain.toUpperCase();
         while (true) {
             if (docDomain in this.getDomains()) {
-                return this.domains[docDomain];
+  return this.domains[docDomain];
             }
             var nextDot = docDomain.indexOf(".");
             if (nextDot < 0) {
-                break;
+  break;
             }
             docDomain = docDomain.substr(nextDot + 1);
         }
@@ -337,7 +365,7 @@ extend(ActiveFilter, Filter, {
         docDomain = docDomain.toUpperCase();
         for (var domain in this.getDomains()) {
             if (this.domains[domain] && domain != docDomain && (domain.length <= docDomain.length || domain.indexOf("." + docDomain) != domain.length - docDomain.length - 1)) {
-                return false;
+  return false;
             }
         }
         return true;
@@ -429,48 +457,48 @@ RegExpFilter.fromText = function (text) {
             var value = null;
             var separatorIndex = option.indexOf("=");
             if (separatorIndex >= 0) {
-                value = option.substr(separatorIndex + 1);
-                option = option.substr(0, separatorIndex);
+  value = option.substr(separatorIndex + 1);
+  option = option.substr(0, separatorIndex);
             }
             option = option.replace(/-/, "_");
             if (option in RegExpFilter.typeMap) {
-                if (contentType == null) {
-                    contentType = 0;
-                }
-                contentType |= RegExpFilter.typeMap[option];
+  if (contentType == null) {
+      contentType = 0;
+  }
+  contentType |= RegExpFilter.typeMap[option];
             }
             else if (option.charAt(0) == "~" && option.substr(1) in RegExpFilter.typeMap) {
-                if (contentType == null) {
-                    contentType = RegExpFilter.prototype.contentType;
-                }
-                contentType &= ~RegExpFilter.typeMap[option.substr(1)];
+  if (contentType == null) {
+      contentType = RegExpFilter.prototype.contentType;
+  }
+  contentType &= ~RegExpFilter.typeMap[option.substr(1)];
             }
             else if (option == "MATCH_CASE") {
-                matchCase = true;
+  matchCase = true;
             }
             else if (option == "~MATCH_CASE") {
-                matchCase = false;
+  matchCase = false;
             }
             else if (option == "DOMAIN" && typeof value != "undefined") {
-                domains = value;
+  domains = value;
             }
             else if (option == "THIRD_PARTY") {
-                thirdParty = true;
+  thirdParty = true;
             }
             else if (option == "~THIRD_PARTY") {
-                thirdParty = false;
+  thirdParty = false;
             }
             else if (option == "COLLAPSE") {
-                collapse = true;
+  collapse = true;
             }
             else if (option == "~COLLAPSE") {
-                collapse = false;
+  collapse = false;
             }
             else if (option == "SITEKEY" && typeof value != "undefined") {
-                sitekeys = value;
+  sitekeys = value;
             }
             else {
-                return new InvalidFilter(origText, "Unknown option " + option.toLowerCase());
+  return new InvalidFilter(origText, "Unknown option " + option.toLowerCase());
             }
         }
     }
@@ -566,10 +594,10 @@ Matcher.prototype = {
         else {
             var index = list.indexOf(filter);
             if (index >= 0) {
-                list.splice(index, 1);
-                if (list.length == 1) {
-                    this.filterByKeyword[keyword] = list[0];
-                }
+  list.splice(index, 1);
+  if (list.length == 1) {
+      this.filterByKeyword[keyword] = list[0];
+  }
             }
         }
         delete this.keywordByFilter[filter.text];
@@ -598,9 +626,9 @@ Matcher.prototype = {
             var candidate = candidates[i].substr(1);
             var count = candidate in hash ? hash[candidate].length : 0;
             if (count < resultCount || count == resultCount && candidate.length > resultLength) {
-                result = candidate;
-                resultCount = count;
-                resultLength = candidate.length;
+  result = candidate;
+  resultCount = count;
+  resultLength = candidate.length;
             }
         }
         return result;
@@ -621,10 +649,10 @@ Matcher.prototype = {
         for (var i = 0; i < list.length; i++) {
             var filter = list[i];
             if (filter == "#this") {
-                filter = list;
+  filter = list;
             }
             if (filter.matches(location, contentType, docDomain, thirdParty, sitekey)) {
-                return filter;
+  return filter;
             }
         }
         return null;
@@ -638,10 +666,10 @@ Matcher.prototype = {
         for (var i = 0, l = candidates.length; i < l; i++) {
             var substr = candidates[i];
             if (substr in this.filterByKeyword) {
-                var result = this._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
-                if (result) {
-                    return result;
-                }
+  var result = this._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
+  if (result) {
+      return result;
+  }
             }
         }
         return null;
@@ -732,13 +760,13 @@ CombinedMatcher.prototype = {
         for (var i = 0, l = candidates.length; i < l; i++) {
             var substr = candidates[i];
             if (substr in this.whitelist.filterByKeyword) {
-                var result = this.whitelist._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
-                if (result) {
-                    return result;
-                }
+  var result = this.whitelist._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
+  if (result) {
+      return result;
+  }
             }
             if (substr in this.blacklist.filterByKeyword && blacklistHit === null) {
-                blacklistHit = this.blacklist._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
+  blacklistHit = this.blacklist._checkEntryMatch(substr, location, contentType, docDomain, thirdParty, sitekey);
             }
         }
         return blacklistHit;
