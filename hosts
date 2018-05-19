@@ -1,4 +1,5 @@
-127.0.0.1 l.cn
+127.0.0.1 localhost.cn
+#127.0.0.1 log.mmstat.com  #优酷手机端播放
 #watch
 127.0.0.1 appsupport.qq.com
 127.0.0.1 t7z.cupid.iqiyi.com #爱奇艺
@@ -10,7 +11,31 @@
 #dead
  
 #127.0.0.1 vps.uc.cn
-#127.0.0.1 ads.exosrv.com
+127.0.0.1 mydisplay.ctfile.com
+127.0.0.1 doubleclick.ctfile.com
+127.0.0.1 g.d.cg
+127.0.0.1 j.baminw.cn
+127.0.0.1 ads.ck101.com
+127.0.0.1 www.v-links.net
+127.0.0.1 j.qiqivv.com
+127.0.0.1 ping.doyo.cn
+127.0.0.1 ja2.gamersky.com
+127.0.0.1 www.smucdn.com
+127.0.0.1 boardy.huanqiu.com
+127.0.0.1 boardx.huanqiu.com
+127.0.0.1 pvnwap.zol.com.cn
+127.0.0.1 mstat.zol.com.cn
+127.0.0.1 p.zol-img.com.cn
+127.0.0.1 impa.zol.com.cn
+127.0.0.1 cpro.zol.com.cn
+127.0.0.1 ydjs.zol.com.cn
+127.0.0.1 x.heyzap.com
+127.0.0.1 ads.heyzap.com
+127.0.0.1 ads.exosrv.com
+127.0.0.1 y.un4u.cn
+127.0.0.1 j17.lynow.cn
+127.0.0.1 wherestion.com
+127.0.0.1 medware.top
 127.0.0.1 ucflow.uc.cn
 127.0.0.1 sz-userver-upaas.uc.cn
 127.0.0.1 doghole.ucweb.com
@@ -81,7 +106,6 @@
 127.0.0.1 adash.m.taobao.com
 127.0.0.1 ecpm.tanx.com
 127.0.0.1 gm.mmstat.com
-#127.0.0.1 log.mmstat.com  #优酷手机端播放
 127.0.0.1 tuijian.sogou.com
 127.0.0.1 txt.go.sohu.com
 127.0.0.1 pb.sogou.com
@@ -436,17 +460,17 @@
 127.0.0.1 d7.sina.com.cn
 127.0.0.1 d8.sina.com.cn
 127.0.0.1 d9.sina.com.cn
-0.0.0.0 sax.sina.com.cn
-0.0.0.0 sax1.sina.com.cn
-0.0.0.0 sax2.sina.com.cn
-0.0.0.0 sax3.sina.com.cn
-0.0.0.0 sax4.sina.com.cn
-0.0.0.0 sax5.sina.com.cn
-0.0.0.0 sax6.sina.com.cn
-0.0.0.0 sax7.sina.com.cn
-0.0.0.0 sax8.sina.com.cn
-0.0.0.0 sax9.sina.com.cn
-0.0.0.0 saxs.sina.com.cn
+127.0.0.1 sax.sina.com.cn
+127.0.0.1 sax1.sina.com.cn
+127.0.0.1 sax2.sina.com.cn
+127.0.0.1 sax3.sina.com.cn
+127.0.0.1 sax4.sina.com.cn
+127.0.0.1 sax5.sina.com.cn
+127.0.0.1 sax6.sina.com.cn
+127.0.0.1 sax7.sina.com.cn
+127.0.0.1 sax8.sina.com.cn
+127.0.0.1 sax9.sina.com.cn
+127.0.0.1 saxs.sina.com.cn
 127.0.0.1 pingma.qq.com
 127.0.0.1 aeventlog.beacon.qq.com
 127.0.0.1 android.rqd.qq.com

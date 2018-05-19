@@ -6,7 +6,16 @@ var proxy = "__PROXY__";
 var rules = [
     "@@syndication.twitter.com",
     
+    //"||farmskins.com",
     //"||steamcommunity.com",
+    "||comic.ck101.com",
+    "||pepapi.pepitastore.com",
+    "||ips.pepitastore.com",
+    "||cdnjs.cloudflare.com",
+    "||www.spoune.com",
+    "||thepiratebay.org",
+    "||thepiratebay3.org",
+    "||ifun01.com",
     "||postimgs.org",
     "||postimg.org",
     "||na.static.mega.co.nz",
@@ -25,7 +34,6 @@ var rules = [
     "||cdn.fanatical.com",
     "||www.fanatical.com",
     "||www.fakenamegenerator.com",
-    "||farmskins.com",
     "||1hvpn.com",
     "||chenron.pixnet.net",
     "||freess.cx",
@@ -141,12 +149,14 @@ var rules = [
     "||zh.m.wikipedia.org",
 
     //谷歌
+    "||similar-images.googlelabs.com",
     "||apis.google.com",
     "||ggpht.com",
     "||www.android.com",
     "||blog.google",
     "||googleblog.com",
     "||goo.gl",
+    "||android.clients.google.com",
     "||google.com",
     "||google.al",
     "||google.com.hk",
@@ -167,6 +177,7 @@ var rules = [
     
     //google-blogspot
     "||blogspot.com",
+    "||blogspot.hk",
     "||blogspot.tw",
     "||blogspot.sg",
     "||blogspot.my",
