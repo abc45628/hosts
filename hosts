@@ -1,6 +1,9 @@
 0.0.0.1 localhost.cn
 #0.0.0.1 log.mmstat.com  #优酷手机端播放
 #watch
+0.0.0.1 ipengtai.huanqiu.com
+0.0.0.1 37.sinawap.com
+0.0.0.1 73.sinawap.com
 0.0.0.1 appsupport.qq.com
 0.0.0.1 t7z.cupid.iqiyi.com #爱奇艺
 0.0.0.1 common.duapps.com
@@ -14,6 +17,10 @@
 #dead
  
 #0.0.0.1 vps.uc.cn
+0.0.0.1 presidery.info
+0.0.0.1 ads.exoclick.com
+0.0.0.1 ads.adxpansion.com
+0.0.0.1 fbhost1.kk9984.pw
 0.0.0.1 clickc.admaster.com.cn
 0.0.0.1 portal.wsds.cn
 0.0.0.1 dd.browser.360.cn
@@ -92,6 +99,7 @@
 0.0.0.1 clientlog.music.163.com
 0.0.0.1 ad.chelaile.net.cn
 0.0.0.1 logs.amap.com
+0.0.0.1 cm.g.doubleclick.net
 0.0.0.1 pubads.g.doubleclick.net
 0.0.0.1 shuttle.bayescom.com
 0.0.0.1 jdd01.198game.net
@@ -432,6 +440,7 @@
 0.0.0.1 rcm.shinobi.jp
 0.0.0.1 adm.shinobi.jp
 0.0.0.1 js.click-plus.net
+0.0.0.1 analytics.twitter.com
 0.0.0.1 syndication.twitter.com
 0.0.0.1 momo.popupad.cn
 0.0.0.1 ad.dlbooks.to
