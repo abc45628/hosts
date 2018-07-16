@@ -5,19 +5,40 @@ var proxy = "__PROXY__";
 
 var rules = [
     //网站
+    "||bit.ly^",
     "||avgle.com^$domain=~static-clst.avgle.com",
 
     //漫画
     //"||comic.ck101.com^",
     
+    //开发
+    //"||gist.github.com^",
+    //"||tortoisesvn.net^",
+    "||stackoverflow.com^",
+    "||developer.mozilla.org^",
+    "||mdn.mozillademos.org^",
+    
+    
     //amazonaws
+    //"||s3.amazonaws.com^",
     
     //twitter
+    "@@||cdn.syndication.twimg.com^",
     "@@||syndication.twitter.com^",
     "@@||analytics.twitter.com^",
     "||twitter.com",
+    "||abs-0.twimg.com^",
     "||abs.twimg.com^",
     "||pbs.twimg.com^",
+    
+    //facebook
+    "||www.facebook.com^",
+    "||connect.facebook.net^",
+    "||external-sin6-2.xx.fbcdn.net^",
+    "||scontent-sin6-2.xx.fbcdn.net^",
+    "||staticxx.facebook.com^",
+    "||static.xx.fbcdn.net^",
+    
     
     
     //MicroSoft
@@ -30,6 +51,7 @@ var rules = [
     "||zh.m.wikipedia.org^",
 
     //谷歌
+    "||csp.withgoogle.com^",
     "||similar-images.googlelabs.com^",
     "||apis.google.com^",
     "||ggpht.com^",

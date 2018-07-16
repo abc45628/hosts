@@ -11,16 +11,16 @@
 0.0.0.1 appsupport.qq.com
 0.0.0.1 t7z.cupid.iqiyi.com #爱奇艺
 0.0.0.1 common.duapps.com
-0.0.0.1 amdc.m.taobao.com
 0.0.0.1 pasta.esfile.duapps.com
-0.0.0.1 fb.xk.miui.com
 0.0.0.1 dongfeng.alicdn.com
 0.0.0.1 js.honeybadger.io #web崩溃监测
 0.0.0.1 api.segment.io #部分情况下可能需要打开
 0.0.0.1 cdn.segment.com #部分情况下可能需要打开
 #dead
- 
-#0.0.0.1 vps.uc.cn
+
+0.0.0.1 fb.xk.miui.com
+0.0.0.1 hbopenbid.pubmatic.com
+0.0.0.1 apex.go.sonobi.com
 0.0.0.1 filter.aili.com
 0.0.0.1 lydsp.aili.com
 0.0.0.1 r.zlongad.com
@@ -145,7 +145,6 @@
 0.0.0.1 ad.doubleclick.net
 0.0.0.1 v.gdt.qq.com
 0.0.0.1 crash2.zhihu.com
-0.0.0.1 adash.m.taobao.com
 0.0.0.1 ecpm.tanx.com
 0.0.0.1 gm.mmstat.com
 0.0.0.1 tuijian.sogou.com
@@ -221,7 +220,6 @@
 0.0.0.1 img1.126.net
 0.0.0.1 a.alimama.cn
 0.0.0.1 alimama.alicdn.com
-0.0.0.1 g.click.taobao.com
 0.0.0.1 js.diangon.com
 0.0.0.1 jsm.diangon.com
 0.0.0.1 app.migc.xiaomi.com
@@ -251,12 +249,10 @@
 0.0.0.1 www.qmlog.cn
 0.0.0.1 log.cs.pp.cn
 0.0.0.1 puds.ucweb.com
-0.0.0.1 tunion-api.m.taobao.com
 0.0.0.1 count.atm.youku.com
 0.0.0.1 m.atm.youku.com
 0.0.0.1 val.atm.youku.com
 0.0.0.1 by.uservoice.com
-0.0.0.1 acs4baichuan.m.taobao.com
 0.0.0.1 portal-portm.meituan.com
 0.0.0.1 report.meituan.com
 0.0.0.1 mars.jd.com
@@ -435,6 +431,7 @@
 0.0.0.1 adm.shinobi.jp
 0.0.0.1 js.click-plus.net
 0.0.0.1 analytics.twitter.com
+0.0.0.1 cdn.syndication.twimg.com
 0.0.0.1 syndication.twitter.com
 0.0.0.1 momo.popupad.cn
 0.0.0.1 ad.dlbooks.to
@@ -458,6 +455,11 @@
 0.0.0.1 adash.man.aliyuncs.com
 0.0.0.1 adashx.m.taobao.com
 0.0.0.1 adashbc.m.taobao.com
+0.0.0.1 g.click.taobao.com
+0.0.0.1 adash.m.taobao.com
+0.0.0.1 amdc.m.taobao.com
+0.0.0.1 tunion-api.m.taobao.com
+0.0.0.1 acs4baichuan.m.taobao.com
 0.0.0.1 ifs.tanx.com
 0.0.0.1 p.tanx.com
 0.0.0.1 hm.baidu.com
