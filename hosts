@@ -1,4 +1,8 @@
 0.0.0.1 localhost.cn
+184.26.216.215 store.steampowered.com
+184.26.216.215 steamcommunity.com
+
+
 #0.0.0.1 log.mmstat.com  #优酷手机端播放
 #watch
 0.0.0.1 ipengtai.huanqiu.com
@@ -17,6 +21,11 @@
 #dead
  
 #0.0.0.1 vps.uc.cn
+0.0.0.1 filter.aili.com
+0.0.0.1 lydsp.aili.com
+0.0.0.1 r.zlongad.com
+0.0.0.1 wr.da.netease.com
+0.0.0.1 cmp.network-n.com
 0.0.0.1 presidery.info
 0.0.0.1 ads.exoclick.com
 0.0.0.1 ads.adxpansion.com
@@ -42,7 +51,6 @@
 0.0.0.1 js-agent.newrelic.com
 0.0.0.1 bam.nr-data.net
 0.0.0.1 cdn.carbonads.com
-0.0.0.1 update.pan.baidu.com
 0.0.0.1 analytics.atlassian.com
 0.0.0.1 engine.bitmedianetwork.com
 0.0.0.1 cdn.optimizely.com
@@ -121,7 +129,6 @@
 0.0.0.1 extern.yahoo.com
 0.0.0.1 graph.facebook.com
 0.0.0.1 s.lmstyle.cn
-0.0.0.1 mime.baidu.com
 0.0.0.1 extlog.snssdk.com
 0.0.0.1 i.snssdk.com
 0.0.0.1 sdkcloud.e.360.cn
@@ -132,7 +139,6 @@
 0.0.0.1 df.tanx.com
 0.0.0.1 rdstat.tanx.com
 0.0.0.1 zeus.ad.xiaomi.com
-0.0.0.1 conf.international.baidu.com
 0.0.0.1 nrc.tapas.net
 0.0.0.1 stats.jpush.cn
 0.0.0.1 ef-dongfeng.tanx.com
@@ -147,10 +153,7 @@
 0.0.0.1 pb.sogou.com
 0.0.0.1 sdk.live.360.cn
 0.0.0.1 masdk.3g.qq.com
-0.0.0.1 afd.baidu.com
 0.0.0.1 sm.domobcdn.com
-0.0.0.1 mobads-logs.baidu.com
-0.0.0.1 mobads.baidu.com
 0.0.0.1 ulogs.umeng.com
 0.0.0.1 plbslog.umeng.com
 0.0.0.1 tg.feidee.com
@@ -201,7 +204,6 @@
 0.0.0.1 kanbudao1.100669.com
 0.0.0.1 mixer.sina.cn
 0.0.0.1 images.pagechoice.net
-0.0.0.1 crs.baidu.com
 0.0.0.1 c.wrating.com
 0.0.0.1 1.aili.com
 0.0.0.1 acdn.adnxs.com
@@ -209,7 +211,6 @@
 0.0.0.1 js.5068.com
 0.0.0.1 y.aioda.cn
 0.0.0.1 dm.4name.com
-0.0.0.1 mipengine.baidu.com
 0.0.0.1 su.bdimg.com
 0.0.0.1 y.5125129.com
 0.0.0.1 bdjs.ixiumei.com
@@ -273,8 +274,6 @@
 0.0.0.1 bi-collector.oneapm.com
 0.0.0.1 bu1.duba.com
 0.0.0.1 bu2.duba.com
-0.0.0.1 cir-smart.baidu.com
-0.0.0.1 cm.pos.baidu.com
 0.0.0.1 adlic.rjfun.com
 0.0.0.1 api.ad.xiaomi.com
 0.0.0.1 r.browser.miui.com
@@ -288,7 +287,6 @@
 0.0.0.1 www.qchannel02.cn
 0.0.0.1 www.qchannel03.cn
 0.0.0.1 www.qchannel04.cn
-0.0.0.1 nsclick.baidu.com
 0.0.0.1 embedlog.duiba.com.cn
 0.0.0.1 api.growingio.com
 0.0.0.1 tags.growingio.com
@@ -358,7 +356,6 @@
 0.0.0.1 adx.mbai.cn
 0.0.0.1 j.jimeilm.com
 0.0.0.1 pc.2w14.com
-0.0.0.1 cbjs.baidu.com
 0.0.0.1 tags.tiqcdn.cn
 0.0.0.1 count.wk2.com
 0.0.0.1 c.mnjkw.cn
@@ -411,7 +408,6 @@
 0.0.0.1 ja.gamersky.com
 0.0.0.1 v2.jiathis.com
 0.0.0.1 v3.jiathis.com
-0.0.0.1 cpro.baidu.com
 0.0.0.1 afpmm.alicdn.com
 0.0.0.1 m.xmshqh.com
 0.0.0.1 js.genieessp.com
@@ -426,8 +422,6 @@
 0.0.0.1 mf.atm.youku.com
 0.0.0.1 v2html.atm.youku.com
 0.0.0.1 irs01.com
-0.0.0.1 cpu.baidu.com
-0.0.0.1 msite.baidu.com
 0.0.0.1 api.rideraid.net
 0.0.0.1 static.adroute.focas.jp
 0.0.0.1 ds.advg.jp
@@ -447,7 +441,6 @@
 0.0.0.1 js.octopuspop.com
 0.0.0.1 b.scorecardresearch.com
 0.0.0.1 iqiyi.irs01.com
-0.0.0.1 datax.baidu.com
 0.0.0.1 v2.reachmax.cn
 0.0.0.1 tyaqy.m.cn.miaozhen.com
 0.0.0.1 msg.71.am
@@ -468,21 +461,39 @@
 0.0.0.1 ifs.tanx.com
 0.0.0.1 p.tanx.com
 0.0.0.1 hm.baidu.com
+0.0.0.1 afd.baidu.com
+0.0.0.1 conf.international.baidu.com
+0.0.0.1 datax.baidu.com
+0.0.0.1 mobads-logs.baidu.com
+0.0.0.1 mobads.baidu.com
 0.0.0.1 bdimg.share.baidu.com
-0.0.0.1 api.mobula.sdk.duapps.com
-0.0.0.1 rts.mobula.sdk.duapps.com
-0.0.0.1 ncr.tapas.net
+0.0.0.1 cpro.baidu.com
+0.0.0.1 cbjs.baidu.com
+0.0.0.1 nsclick.baidu.com
+0.0.0.1 cir-smart.baidu.com
+0.0.0.1 cpu.baidu.com
+0.0.0.1 mipengine.baidu.com
+0.0.0.1 msite.baidu.com
+0.0.0.1 cm.pos.baidu.com
 0.0.0.1 api.share.baidu.com
+0.0.0.1 crs.baidu.com
 0.0.0.1 als.baidu.com
 0.0.0.1 push.zhanzhang.baidu.com
 0.0.0.1 pos.baidu.com
+0.0.0.1 paimgcdn.baidu.com
+0.0.0.1 api.mobula.sdk.duapps.com
+0.0.0.1 rts.mobula.sdk.duapps.com
+0.0.0.1 ncr.tapas.net
+0.0.0.1 mime.baidu.com
 0.0.0.1 mpb2.iteye.com
 0.0.0.1 cpro2.baidustatic.com
 0.0.0.1 cpro.baidustatic.com
 0.0.0.1 dup.baidustatic.com
 0.0.0.1 a1.zhanzhang.net
+0.0.0.1 hpd.baidu.com
 0.0.0.1 hmma.baidu.com
 0.0.0.1 wn.pos.baidu.com
+0.0.0.1 update.pan.baidu.com
 0.0.0.1 static.bshare.cn
 0.0.0.1 log.weico.cc
 0.0.0.1 beacon.sina.com.cn
