@@ -1,6 +1,7 @@
 0.0.0.1 localhost.cn
 184.26.216.215 store.steampowered.com
 184.26.216.215 steamcommunity.com
+0.0.0.1 account.jetbrains.com #DataGrip破解
 
 
 #0.0.0.1 log.mmstat.com  #优酷手机端播放
@@ -18,6 +19,54 @@
 0.0.0.1 cdn.segment.com #部分情况下可能需要打开
 #dead
 
+0.0.0.1 client.tv.uc.cn
+0.0.0.1 page.c.uc.cn
+0.0.0.1 safe.ucweb.com
+0.0.0.1 experimentationcoa-bing-tas.msedge.net
+0.0.0.1 holmeshelp.uc.cn
+0.0.0.1 iflow.sm.cn
+0.0.0.1 ucus.ucweb.com
+0.0.0.1 broccoli.uc.cn
+0.0.0.1 video.browser.miui.com
+0.0.0.1 letv.axp.admaster.com.cn
+0.0.0.1 letv.ipdx.cn.miaozhen.com
+0.0.0.1 sso.le.com
+0.0.0.1 letv.irs01.com
+0.0.0.1 irs01.net
+0.0.0.1 fe-go.letv.com
+0.0.0.1 dc.letv.com
+0.0.0.1 banana.le.com
+0.0.0.1 apple.www.letv.com
+0.0.0.1 apple-www.le.com
+0.0.0.1 fz.letv.com
+0.0.0.1 ark.le.com
+0.0.0.1 ark.letv.com
+0.0.0.1 count5.pconline.com.cn
+0.0.0.1 count6.pconline.com.cn
+0.0.0.1 ivy.pconline.com.cn
+0.0.0.1 ads-a.juicyads.com
+0.0.0.1 secure.quantserve.com
+0.0.0.1 mem.gfx.ms
+0.0.0.1 uhf.microsoft.com
+0.0.0.1 cdnssl.clicktale.net
+0.0.0.1 web.vortex.data.microsoft.com
+0.0.0.1 mipcache.bdstatic.com
+0.0.0.1 wm.mipcdn.com
+0.0.0.1 f.fengyx.com
+0.0.0.1 superwifi.uodoo.com
+0.0.0.1 ad.12306.cn
+0.0.0.1 feed.baidu.com
+0.0.0.1 m.adtiming.com
+0.0.0.1 sdk.adtiming.com
+0.0.0.1 cdn.cookielaw.org
+0.0.0.1 chimpstatic.com
+0.0.0.1 beacon.tingyun.com
+0.0.0.1 logupdate.avlyun.sec.miui.com
+0.0.0.1 authorne.info
+0.0.0.1 unrestern.info
+0.0.0.1 accessa.club
+0.0.0.1 sstatic1.histats.com
+0.0.0.1 evantative.top
 0.0.0.1 fb.xk.miui.com
 0.0.0.1 hbopenbid.pubmatic.com
 0.0.0.1 apex.go.sonobi.com
@@ -81,6 +130,8 @@
 0.0.0.1 medware.top
 0.0.0.1 ucflow.uc.cn
 0.0.0.1 sz-userver-upaas.uc.cn
+0.0.0.1 px.ucweb.com
+0.0.0.1 adtrack.ucweb.com
 0.0.0.1 doghole.ucweb.com
 0.0.0.1 order.sm.cn
 0.0.0.1 dspmy.ge95.com
@@ -125,6 +176,7 @@
 0.0.0.1 brewindon.com
 0.0.0.1 zeliteral.info
 0.0.0.1 analytics.zhaopin.cn
+0.0.0.1 astrategy.beacon.qq.com
 0.0.0.1 huatuocode.huatuo.qq.com
 0.0.0.1 extern.yahoo.com
 0.0.0.1 graph.facebook.com
@@ -231,6 +283,7 @@
 0.0.0.1 iflow.uczzd.com
 0.0.0.1 iflow.uczzd.cn
 0.0.0.1 trace.ynet.com
+0.0.0.1 log.m.sm.cn
 0.0.0.1 dns.m.sm.cn
 0.0.0.1 utp-dmp.ucweb.com
 0.0.0.1 utp.ucweb.com
@@ -444,7 +497,11 @@
 0.0.0.1 adspaces.ero-advertising.com
 0.0.0.1 rjs.niuxgame77.com
 0.0.0.1 sdk.appadhoc.com
+0.0.0.1 pv.csdn.net
+0.0.0.1 g.csdnimg.cn
+0.0.0.1 re.csdn.net
 0.0.0.1 dc.csdn.net
+0.0.0.1 theta.sogoucdn.com
 0.0.0.1 g.daman.cc
 0.0.0.1 cdn.baizhu.cc
 0.0.0.1 media.jointreport-switch.com
@@ -462,6 +519,7 @@
 0.0.0.1 acs4baichuan.m.taobao.com
 0.0.0.1 ifs.tanx.com
 0.0.0.1 p.tanx.com
+0.0.0.1 mbd.baidu.com
 0.0.0.1 hm.baidu.com
 0.0.0.1 afd.baidu.com
 0.0.0.1 conf.international.baidu.com
