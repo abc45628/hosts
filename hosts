@@ -18,6 +18,10 @@
 0.0.0.1 cdn.segment.com #部分情况下可能需要打开
 #dead
 
+0.0.0.1 static.dable.io
+0.0.0.1 secure.adnxs.com
+0.0.0.1 js.mtburn.com
+0.0.0.1 ad.yieldmanager.com
 0.0.0.1 r3.mail.ru
 0.0.0.1 top-fwz1.mail.ru
 0.0.0.1 www.tns-counter.ru
