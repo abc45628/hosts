@@ -1,8 +1,7 @@
 0.0.0.1 localhost.cn
-184.26.216.215 store.steampowered.com
-184.26.216.215 steamcommunity.com
+184.30.226.234 store.steampowered.com
+184.30.226.234 steamcommunity.com
 0.0.0.1 account.jetbrains.com #DataGrip破解
-
 
 #0.0.0.1 log.mmstat.com  #优酷手机端播放
 #watch
@@ -19,6 +18,19 @@
 0.0.0.1 cdn.segment.com #部分情况下可能需要打开
 #dead
 
+0.0.0.1 r3.mail.ru
+0.0.0.1 top-fwz1.mail.ru
+0.0.0.1 www.tns-counter.ru
+0.0.0.1 counter.yadro.ru
+0.0.0.1 sb.scorecardresearch.com
+0.0.0.1 zhannei-dm.csdn.net
+0.0.0.1 shared.ydstatic.com
+0.0.0.1 nbrecsys.4paradigm.com
+0.0.0.1 rabc1.iteye.com
+0.0.0.1 rabc2.iteye.com
+0.0.0.1 tags.tiqcdn.com
+0.0.0.1 s.thebrighttag.com
+0.0.0.1 3879194.fls.doubleclick.net
 0.0.0.1 client.tv.uc.cn
 0.0.0.1 page.c.uc.cn
 0.0.0.1 safe.ucweb.com
