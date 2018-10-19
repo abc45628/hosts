@@ -8,6 +8,7 @@ var rules = [
 	"||bit.ly^",
 	"||discordapp.com^",
 	"||avgle.com^",
+	"||maxcdn.bootstrapcdn.com^",
 	//漫画
 	"||comic.ck101.com^",
 
@@ -21,6 +22,8 @@ var rules = [
 	"||www.humblebundle.com^",
 	"||forums.ubi.com^",
 	"||static5.ubi.com^",
+	"||forum.gamer.com.tw^",
+	"||authorization.su^",
 	
 	//社会化评论组件
 	"||disqus.com^",
@@ -30,9 +33,13 @@ var rules = [
 	"||onedrive.live.com^",
 	//社交类
 	"||vk.com^",
+	"||passport.twitch.tv^",
+	"||id.twitch.tv^",
+	"||api.twitch.tv^",
 	//facebook
 	"@@graph.facebook.com",
 	"||facebook.com^",
+	"||connect.facebook.net^",
 	"||xx.fbcdn.net^",
 	//twitter
 	"@@analytics.twitter.com",
@@ -47,6 +54,8 @@ var rules = [
 	"||gateway.reddit.com^",
 	
 	//wikipedia
+	"||upload.wikimedia.org^",
+	"||en.wikipedia.org^",
 	"||zh.wikipedia.org^",
 	"||zh-yue.wikipedia.org^",
 	"||zh.m.wikipedia.org^",
@@ -69,8 +78,8 @@ var rules = [
 	"||gmail.com^",
 	"||csp.withgoogle.com^",
 	//youtube
-	"||img.youtube.com^",
-	"||www.youtube.com^",
+	"||youtu.be^",
+	"||youtube.com^",
 	"||ytimg.com^",
 	//blogger
 	"||blogspot.com^",

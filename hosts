@@ -1,6 +1,7 @@
 0.0.0.1 localhost.cn
-184.30.226.234 store.steampowered.com
-184.30.226.234 steamcommunity.com
+#184.30.226.234 store.steampowered.com
+#184.30.226.234 steamcommunity.com
+
 0.0.0.1 account.jetbrains.com #jetbrains破解
 
 #0.0.0.1 log.mmstat.com  #优酷手机端播放
@@ -18,6 +19,16 @@
 0.0.0.1 cdn.segment.com #部分情况下可能需要打开
 #dead
 
+0.0.0.1 g.doyo.cn
+0.0.0.1 pt.clickdata.37wan.com
+0.0.0.1 g.2jsu2.com
+0.0.0.1 tj.doyo.cn
+0.0.0.1 www.nkscdn.com
+0.0.0.1 www.vxsnk.com
+0.0.0.1 sponsor.segmentfault.com
+0.0.0.1 pk.yy.com
+0.0.0.1 ylog.hiido.com
+0.0.0.1 tlog.hiido.com
 0.0.0.1 ad.winrar.com.cn
 0.0.0.1 static.dable.io
 0.0.0.1 secure.adnxs.com
