@@ -1,5 +1,7 @@
 package cn;
 
+import com.google.gson.Gson;
+
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -26,28 +28,36 @@ public class App {
         for (int i = 0; i < dead.size(); i++) {
             String deadRule = dead.get(i);
             if (deadRule.length() == 0 || deadRule.startsWith("#")) {continue; }
+
             String url = deadRule.split(" ")[1];
             String[] urlPart = url.split("\\.");
+
+            Map parentMap = urlMap;
+            Map subMap = null;
             for (int j = urlPart.length - 1; j >= 0; j--) {
                 String part = urlPart[j];
-                if (j != 0) {
-                    Map<String, Map<String, ?>> m = (Map<String, Map<String, ?>>) urlMap.get(part);
-
-                } else {
-                    String s = (String) urlMap.get(part);
+                if (j == 0) {
+                    Object o = parentMap.get(part);
+                    if (o == null) {
+                        parentMap.put(part, part);
+                    }
+                } else if (j != 0) {
+                    subMap = (Map) parentMap.get(part);
+                    if (subMap == null) {
+                        subMap = new HashMap();
+                        parentMap.put(part, subMap);
+                    }
+                    parentMap = subMap;
+                    subMap = null;
                 }
-                System.out.println(part);
             }
+//            System.out.println(urlMap);
         }
+        Gson gson = new Gson();
+
+        System.out.println(gson.toJson(urlMap));
     }
 
-    static void dealDeadRule(String part, Map m, int index) {
-        Map o = (Map) m.get(part);
-        if (o == null) {
-            o = new HashMap();
-        }
-
-    }
 
     private static void readFile() throws IOException {
         Path path = Paths.get("hosts");
