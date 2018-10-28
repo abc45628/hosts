@@ -1,7 +1,5 @@
 package cn;
 
-import com.google.gson.Gson;
-
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -27,6 +25,7 @@ public class App {
     private static final List<String> undead = new ArrayList<>();
     private static final List<String> dead = new ArrayList<>();
     private static final IdentityHashMap<String, Object> urlMapRoot = new IdentityHashMap<>();
+    private static final String result = "";
 
     private App() {}
 
@@ -35,9 +34,48 @@ public class App {
         hostToMap();
         cleanDuplicateUrl(urlMapRoot);
 
+        undead.clear();
+        dead.clear();
 
-        Gson gson = new Gson();
-        System.out.println(gson.toJson(urlMapRoot));
+        output(urlMapRoot, null);
+
+//        System.out.println(new Gson().toJson(urlMapRoot));
+
+        System.out.println("[");
+        for (int i = 0; i < dead.size(); i++) {
+            String s = "\"" + dead.get(i) + "\",";
+            System.out.println(s);
+        }
+        System.out.println("]");
+    }
+
+    /** 输出网址 */
+    private static void output(IdentityHashMap<String, Object> source, List<String> urlPartList) {
+        List<String> sourceKey = new ArrayList<>(source.keySet());
+        Collections.sort(sourceKey);
+        for (int i = 0; i < sourceKey.size(); i++) {
+            if (source == urlMapRoot) {
+                urlPartList = new ArrayList<>();
+            }
+            String key = sourceKey.get(i);
+            Object o = source.get(key);
+            if (o instanceof String) {
+                urlPartList.add(key);
+                String url = "";
+                for (int j = urlPartList.size() - 1; j >= 0; j--) {
+                    String s = urlPartList.get(j);
+                    url = url + "." + s;
+                }
+                url = url.substring(1);
+                dead.add(url);
+                urlPartList.remove(urlPartList.size() - 1);
+                System.out.println();
+            } else if (o instanceof IdentityHashMap) {
+                urlPartList.add(key);
+                output((IdentityHashMap<String, Object>) o, urlPartList);
+                urlPartList.remove(urlPartList.size() - 1);
+            }
+        }
     }
 
 
