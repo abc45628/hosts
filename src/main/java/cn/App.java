@@ -23,38 +23,45 @@ public class App {
     private static final String local_ip = "0.0.0.1";
     private static final String dead_str = "#dead";
     private static final List<String> undead = new ArrayList<>();
+    private static final IdentityHashMap<String, Object> undead_urlMapRoot = new IdentityHashMap<>();
     private static final List<String> dead = new ArrayList<>();
-    private static final IdentityHashMap<String, Object> urlMapRoot = new IdentityHashMap<>();
+    private static final IdentityHashMap<String, Object> dead_urlMapRoot = new IdentityHashMap<>();
     private static final String result = "";
 
     private App() {}
 
     public static void main(String[] args) throws IOException {
         readFile();
-        hostToMap();
-        cleanDuplicateUrl(urlMapRoot);
+        hostToMap(dead, dead_urlMapRoot);
+        hostToMap(undead, undead_urlMapRoot);
 
-        undead.clear();
+        cleanDuplicateUrl(dead_urlMapRoot);
+        cleanDuplicateUrl(undead_urlMapRoot);
+
         dead.clear();
+        undead.clear();
 
-        output(urlMapRoot, null);
+        output(dead_urlMapRoot, null, dead_urlMapRoot, dead);
+        output(undead_urlMapRoot, null, undead_urlMapRoot, undead);
 
-//        System.out.println(new Gson().toJson(urlMapRoot));
+//        System.out.println(new Gson().toJson(dead_urlMapRoot));
+//        System.out.println(new Gson().toJson(undead_urlMapRoot));
+//        System.out.println();
+//        System.out.println(dead);
+//        System.out.println(undead);
 
-        System.out.println("[");
-        for (int i = 0; i < dead.size(); i++) {
-            String s = "\"" + dead.get(i) + "\",";
-            System.out.println(s);
-        }
-        System.out.println("]");
+        undead.add("\n\n" + dead_str + "\n");
+        undead.addAll(dead);
+        System.out.println(String.join("", undead));
     }
 
     /** 输出网址 */
-    private static void output(IdentityHashMap<String, Object> source, List<String> urlPartList) {
+    @SuppressWarnings("unchecked")
+    private static void output(IdentityHashMap<String, Object> source, List<String> urlPartList, IdentityHashMap<String, Object> sourceRoot, List<String> urlListRoot) {
         List<String> sourceKey = new ArrayList<>(source.keySet());
         Collections.sort(sourceKey);
         for (int i = 0; i < sourceKey.size(); i++) {
-            if (source == urlMapRoot) {
+            if (source == sourceRoot) {
                 urlPartList = new ArrayList<>();
             }
             String key = sourceKey.get(i);
@@ -67,12 +74,13 @@ public class App {
                     url = url + "." + s;
                 }
                 url = url.substring(1);
-                dead.add(url);
+                url = local_ip + " " + url + "\n";
+                urlListRoot.add(url);
                 urlPartList.remove(urlPartList.size() - 1);
-                System.out.println();
+//                System.out.println();
             } else if (o instanceof IdentityHashMap) {
                 urlPartList.add(key);
-                output((IdentityHashMap<String, Object>) o, urlPartList);
+                output((IdentityHashMap<String, Object>) o, urlPartList, sourceRoot, urlListRoot);
                 urlPartList.remove(urlPartList.size() - 1);
             }
         }
@@ -123,9 +131,9 @@ public class App {
 
 
     @SuppressWarnings("unchecked")
-    private static void hostToMap() {
-        for (int i = 0; i < dead.size(); i++) {
-            String deadRule = dead.get(i);
+    private static void hostToMap(List<String> source, IdentityHashMap<String, Object> mapSource) {
+        for (int i = 0; i < source.size(); i++) {
+            String deadRule = source.get(i);
             if (deadRule.isEmpty() || deadRule.startsWith("#")) {
                 continue;
             }
@@ -133,7 +141,7 @@ public class App {
             String url = deadRule.split(" ")[1];
             String[] urlPart = url.split("\\.");
 
-            Map<String, Object> parentMap = urlMapRoot;
+            Map<String, Object> parentMap = mapSource;
             Map<String, Object> subMap = null;
             for (int j = urlPart.length - 1; j >= 0; j--) {
                 String part = getPart(urlPart[j]);
