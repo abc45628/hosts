@@ -40,7 +40,9 @@ public class App {
         System.out.println(gson.toJson(urlMapRoot));
     }
 
+
     /** 去除重复的网址 */
+    @SuppressWarnings("unchecked")
     private static void cleanDuplicateUrl(IdentityHashMap<String, Object> source) {
         List<String> sourceKey = new ArrayList<>(source.keySet());
         Collections.sort(sourceKey);
@@ -64,7 +66,7 @@ public class App {
             Set<Object> urlSet = new HashSet<>();
             for (String s1 : curKeyList) {
                 Object o = source.get(s1);
-                if (o instanceof Map) {
+                if (o instanceof IdentityHashMap) {
                     cleanDuplicateUrl((IdentityHashMap<String, Object>) o);
                     continue;
                 }
@@ -82,6 +84,7 @@ public class App {
     }
 
 
+    @SuppressWarnings("unchecked")
     private static void hostToMap() {
         for (int i = 0; i < dead.size(); i++) {
             String deadRule = dead.get(i);
