@@ -9,10 +9,11 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 /**
  * Hello world!
@@ -26,47 +27,67 @@ public class App {
     private static final List<String> undead = new ArrayList<>();
     private static final List<String> dead = new ArrayList<>();
     private static final IdentityHashMap<String, Object> urlMapRoot = new IdentityHashMap<>();
-    private static final IdentityHashMap<String, Object> urlMapRootResult = new IdentityHashMap<>();
 
     private App() {}
 
     public static void main(String[] args) throws IOException {
         readFile();
         hostToMap();
-        cleanDuplicateUrl(urlMapRoot, urlMapRootResult);
+        cleanDuplicateUrl(urlMapRoot);
 
 
         Gson gson = new Gson();
         System.out.println(gson.toJson(urlMapRoot));
     }
 
-    private static void cleanDuplicateUrl(IdentityHashMap<String, Object> source, IdentityHashMap<String, Object> result) {
-        List<String> rootKey = new ArrayList<>(source.keySet());
-        Collections.sort(rootKey);
-        for (int i = 0; i < rootKey.size(); i++) {
-            String key = rootKey.get(i);
-            Map<String, List<String>> stringMap = new HashMap<>();//?
-            Object lastPart = urlMapRoot.get(key);
-            if (lastPart instanceof String) {
-                List<String> lastPartList = stringMap.get(key);
-                if (lastPartList == null) {
-                    lastPartList = new ArrayList<>();
-                    stringMap.put(key, lastPartList);
-                }
-                if (lastPartList.contains(lastPart)) {
-                    continue;//说明lastPart之前已经写入新的map，现在碰上重复了
-                } else {
-                    lastPartList.add((String) lastPart);
+    /** 去除重复的网址 */
+    private static void cleanDuplicateUrl(IdentityHashMap<String, Object> source) {
+        List<String> sourceKey = new ArrayList<>(source.keySet());
+        Collections.sort(sourceKey);
+        String curKey = null;
+        List<String> curKeyList = new ArrayList<>();
+        for (int i = 0; i < sourceKey.size(); i++) {
+            String s = sourceKey.get(i);
+            if (curKey == null) {
+                curKey = s;
+            }
+            if (curKey.equals(s)) {
+                curKeyList.add(s);
+                int j = i + 1;
+                if (j < sourceKey.size()) {
+                    if (sourceKey.get(j).equals(curKey)) {
+                        continue;
+                    }
                 }
             }
+            //
+            Set<Object> urlSet = new HashSet<>();
+            for (String s1 : curKeyList) {
+                Object o = source.get(s1);
+                if (o instanceof Map) {
+                    cleanDuplicateUrl((IdentityHashMap<String, Object>) o);
+                    continue;
+                }
+
+                if (urlSet.contains(o)) {
+                    source.remove(s1);
+                }
+                urlSet.add(o);
+            }
+            //
+            curKey = null;
+            curKeyList = new ArrayList<>();
         }
-        System.out.println(rootKey);
+//        System.out.println(sourceKey);
     }
+
 
     private static void hostToMap() {
         for (int i = 0; i < dead.size(); i++) {
             String deadRule = dead.get(i);
-            if (deadRule.isEmpty() || deadRule.startsWith("#")) {continue; }
+            if (deadRule.isEmpty() || deadRule.startsWith("#")) {
+                continue;
+            }
 
             String url = deadRule.split(" ")[1];
             String[] urlPart = url.split("\\.");
