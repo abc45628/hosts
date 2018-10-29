@@ -1,6 +1,9 @@
 package cn;
 
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.nio.ByteBuffer;
+import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -19,6 +22,7 @@ import java.util.Set;
 
 
 public class App {
+    private static final Charset CHARSET = Charset.forName("GB2312");
     private static final List<String> urlPartList = new ArrayList<>();
     private static final String local_ip = "0.0.0.1";
     private static final String dead_str = "#dead";
@@ -52,7 +56,27 @@ public class App {
 
         undead.add("\n\n" + dead_str + "\n");
         undead.addAll(dead);
+
+
         System.out.println(String.join("", undead));
+        outputFile();
+    }
+
+    private static void outputFile() {
+        Path path = Paths.get("hosts.1");
+        try (
+                FileOutputStream fos = new FileOutputStream(path.toFile());
+                FileChannel channel = fos.getChannel();
+        ) {
+            ByteBuffer buffer = ByteBuffer.allocate(1024);
+            String s = String.join("", undead);
+            buffer.put(s.getBytes(CHARSET));
+            buffer.flip();     //此处必须要调用buffer的flip方法
+            channel.write(buffer);
+            channel.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /** 输出网址 */
@@ -174,8 +198,8 @@ public class App {
 
 
     private static void readFile() throws IOException {
-        Path path = Paths.get("hosts.1");
-        List<String> list = Files.readAllLines(path, Charset.forName("GB2312"));
+        Path path = Paths.get("hosts");
+        List<String> list = Files.readAllLines(path, CHARSET);
         boolean isdead = false;
         for (int i = 0; i < list.size(); i++) {
             String s = list.get(i);
