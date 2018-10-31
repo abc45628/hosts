@@ -3,20 +3,37 @@
 
 
 #dead
-0.0.0.1 #360選男
+
+#360選男
 0.0.0.1 cm.lianmeng.360.cn
 0.0.0.1 s.lianmeng.360.cn
 0.0.0.1 show.look.360.cn
 0.0.0.1 g.csdnimg.cn
-0.0.0.1 #baidu利男
+0.0.0.1 d.s11.cn
+0.0.0.1 j.s11.cn
+0.0.0.1 bzclk.baidu.com
+
+#baidu利男
 0.0.0.1 crs.baidu.com
 0.0.0.1 eclick.baidu.com
 0.0.0.1 ers.baidu.com
 0.0.0.1 hm.baidu.com
+0.0.0.1 imageplus.baidu.com
+0.0.0.1 cm.pos.baidu.com
 0.0.0.1 wn.pos.baidu.com
+0.0.0.1 pos.baidu.com
+0.0.0.1 push.zhanzhang.baidu.com
 0.0.0.1 cpro.baidustatic.com
 0.0.0.1 cpro2.baidustatic.com
 0.0.0.1 dup.baidustatic.com
+0.0.0.1 ecma.bdimg.com
+
+#cnzz
+0.0.0.1 c.cnzz.com
+0.0.0.1 s95.cnzz.com
+0.0.0.1 z4.cnzz.com
+
+#google
 0.0.0.1 www.google-analytics.com
 0.0.0.1 pagead2.googlesyndication.com
 0.0.0.1 rabc1.iteye.com

@@ -43,6 +43,8 @@ public class App {
     static {
         urlGroupComment.put("cm.lianmeng.360.cn", "#360联盟");
         urlGroupComment.put("crs.baidu.com", "#baidu网盟");
+        urlGroupComment.put("c.cnzz.com", "#cnzz");
+        urlGroupComment.put("www.google-analytics.com", "#google");
     }
 
     private App() {}
@@ -98,8 +100,12 @@ public class App {
     private static void buildHost3(List<String> source) {
         for (int i = 0; i < source.size(); i++) {
             String s = source.get(i);
-            String urlcomment = MapUtils.getString(urlComment, s, "");
-            s = local_ip + " " + s + urlcomment + "\n";
+            if (s.startsWith("#")) {
+                s = "\n" + s + "\n";
+            } else {
+                String urlcomment = MapUtils.getString(urlComment, s, "");
+                s = local_ip + " " + s + urlcomment + "\n";
+            }
             source.add(i, s);
             source.remove(i + 1);
         }
