@@ -55,8 +55,12 @@
 0.0.0.1 geo2.adobe.com
 0.0.0.1 adserver-us.adtech.advertising.com
 0.0.0.1 cm.adxvip.com
+0.0.0.1 certify.alexametrics.com
+0.0.0.1 certify-js.alexametrics.com
 0.0.0.1 atanx.alicdn.com
 0.0.0.1 atanx2.alicdn.com
+0.0.0.1 api.amplitude.com
+0.0.0.1 cdn.amplitude.com
 0.0.0.1 als.baidu.com
 0.0.0.1 bzclk.baidu.com
 0.0.0.1 cbjs.baidu.com
@@ -67,9 +71,9 @@
 0.0.0.1 ers.baidu.com
 0.0.0.1 hm.baidu.com
 0.0.0.1 imageplus.baidu.com
-0.0.0.1 pos.baidu.com
 0.0.0.1 cm.pos.baidu.com
 0.0.0.1 wn.pos.baidu.com
+0.0.0.1 pos.baidu.com
 0.0.0.1 push.zhanzhang.baidu.com
 0.0.0.1 cpro.baidustatic.com
 0.0.0.1 cpro2.baidustatic.com
@@ -289,12 +293,17 @@
 
 #google
 0.0.0.1 www.google-analytics.com
+0.0.0.1 www.googleadservices.com
 0.0.0.1 pagead2.googlesyndication.com
 0.0.0.1 tpc.googlesyndication.com
 0.0.0.1 www.googletagmanager.com
 0.0.0.1 www.googletagservices.com
 0.0.0.1 ra.gtimg.com
 0.0.0.1 hexagon-analytics.com
+0.0.0.1 static.hotjar.com
+0.0.0.1 vars.hotjar.com
+0.0.0.1 js.hs-scripts.com
+0.0.0.1 app.hubspot.com
 0.0.0.1 g.ieeod0.com
 0.0.0.1 dol.deliver.ifeng.com
 0.0.0.1 dolphin.deliver.ifeng.com
@@ -324,13 +333,16 @@
 0.0.0.1 g.cn.miaozhen.com
 0.0.0.1 yktd.m.cn.miaozhen.com
 0.0.0.1 wisem-cm.cn.miaozhen.com
+0.0.0.1 api.mixpanel.com
 0.0.0.1 526-pcc-974.mktoresp.com
 0.0.0.1 ac.mmstat.com
 0.0.0.1 gm.mmstat.com
 0.0.0.1 yt.mmstat.com
 0.0.0.1 yt1.mmstat.com
+0.0.0.1 cdn.mxpnl.com
 0.0.0.1 cmp.network-n.com
 0.0.0.1 js-agent.newrelic.com
+0.0.0.1 p.nexac.com
 0.0.0.1 imp.optaim.com
 0.0.0.1 www.popoxiu.com
 0.0.0.1 btrace.qq.com
@@ -341,7 +353,12 @@
 0.0.0.1 tajs.qq.com
 0.0.0.1 trace.qq.com
 0.0.0.1 b.scorecardresearch.com
+0.0.0.1 cdn.segment.com
 0.0.0.1 sponsor.segmentfault.com
+0.0.0.1 count-server.sharethis.com
+0.0.0.1 l.sharethis.com
+0.0.0.1 platform-api.sharethis.com
+0.0.0.1 t.sharethis.com
 0.0.0.1 hotword.sogoucdn.com
 0.0.0.1 theta.sogoucdn.com
 0.0.0.1 i.go.sohu.com
@@ -350,6 +367,7 @@
 0.0.0.1 pl.hd.sohu.com
 0.0.0.1 images.sohu.com
 0.0.0.1 pv.sohu.com
+0.0.0.1 api.solvemedia.com
 0.0.0.1 cdn.taboola.com
 0.0.0.1 click.tanx.com
 0.0.0.1 df.tanx.com
@@ -381,6 +399,8 @@
 0.0.0.1 ad.adnet.de
 0.0.0.1 entriedreligible.info
 0.0.0.1 dmx.districtm.io
+0.0.0.1 widget.intercom.io
+0.0.0.1 api.segment.io
 0.0.0.1 js.users.51.la
 0.0.0.1 web2.51.la
 0.0.0.1 c1.adform.net
@@ -398,6 +418,8 @@
 0.0.0.1 stats.g.doubleclick.net
 0.0.0.1 static.doubleclick.net
 0.0.0.1 cm.fastapi.net
+0.0.0.1 js.hs-analytics.net
+0.0.0.1 js.hscta.net
 0.0.0.1 al.kejet.net
 0.0.0.1 aw.kejet.net
 0.0.0.1 munchkin.marketo.net
@@ -407,5 +429,6 @@
 0.0.0.1 c2.popads.net
 0.0.0.1 serve.popads.net
 0.0.0.1 a1.zhanzhang.net
+0.0.0.1 smothere.pro
 0.0.0.1 6.adsco.re
 0.0.0.1 adsco.re
