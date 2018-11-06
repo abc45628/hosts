@@ -12,6 +12,7 @@
 0.0.0.1 cm.lianmeng.360.cn
 0.0.0.1 s.lianmeng.360.cn
 0.0.0.1 show.look.360.cn
+0.0.0.1 s.360.cn
 0.0.0.1 static.bshare.cn
 0.0.0.1 dsp.hypers.com.cn
 0.0.0.1 beacon.sina.com.cn
@@ -60,8 +61,10 @@
 0.0.0.1 aaxdetect.com
 0.0.0.1 addevent.com
 0.0.0.1 e.dlx.addthis.com
+0.0.0.1 s7.addthis.com
 0.0.0.1 ib.adnxs.com
 0.0.0.1 geo2.adobe.com
+0.0.0.1 assets.adobedtm.com
 0.0.0.1 adserver-us.adtech.advertising.com
 0.0.0.1 cm.adxvip.com
 0.0.0.1 aa.agkn.com
@@ -297,6 +300,7 @@
 0.0.0.1 api.cpcwe.com
 0.0.0.1 new.cpcwe.com
 0.0.0.1 cdn.doubleverify.com
+0.0.0.1 js.driftt.com
 0.0.0.1 daima.dsxdn.com
 0.0.0.1 gg.dsxdn.com
 0.0.0.1 web-analytics.engagio.com
@@ -324,6 +328,7 @@
 0.0.0.1 vars.hotjar.com
 0.0.0.1 js.hs-scripts.com
 0.0.0.1 app.hubspot.com
+0.0.0.1 no-cache.hubspot.com
 0.0.0.1 g.ieeod0.com
 0.0.0.1 dol.deliver.ifeng.com
 0.0.0.1 dolphin.deliver.ifeng.com
@@ -338,6 +343,8 @@
 0.0.0.1 cee1.iteye.com
 0.0.0.1 rabc1.iteye.com
 0.0.0.1 rabc2.iteye.com
+0.0.0.1 jscode.jbzj.com
+0.0.0.1 jsjs.jbzj.com
 0.0.0.1 ads-a.juicyads.com
 0.0.0.1 adserver.juicyads.com
 0.0.0.1 adm.leju.com
@@ -373,6 +380,8 @@
 0.0.0.1 js-agent.newrelic.com
 0.0.0.1 p.nexac.com
 0.0.0.1 imp.optaim.com
+0.0.0.1 cdn.optimizely.com
+0.0.0.1 logx.optimizely.com
 0.0.0.1 srv-2018-11-05-18.config.parsely.com
 0.0.0.1 srv-2018-11-05-18.pixel.parsely.com
 0.0.0.1 www.popoxiu.com
@@ -420,8 +429,10 @@
 0.0.0.1 eki.trafficsan.com
 0.0.0.1 ad.turn.com
 0.0.0.1 syndication.twitter.com
+0.0.0.1 w.usabilla.com
 0.0.0.1 www.vns6489.com
 0.0.0.1 adimg.uve.weibo.com
+0.0.0.1 adobeforums.worldsecuresystems.com
 0.0.0.1 count.atm.youku.com
 0.0.0.1 html.atm.youku.com
 0.0.0.1 ipm.atm.youku.com
@@ -434,6 +445,7 @@
 0.0.0.1 lstat.youku.com
 0.0.0.1 myes.youku.com
 0.0.0.1 data4aserver.zbj.com
+0.0.0.1 union.zbj.com
 0.0.0.1 sugar.zhihu.com
 0.0.0.1 zhihu-web-analytics.zhihu.com
 0.0.0.1 zhstatic.zhihu.com
@@ -455,9 +467,12 @@
 0.0.0.1 report.csdn.net
 0.0.0.1 statistic.csdn.net
 0.0.0.1 zhannei-dm.csdn.net
+0.0.0.1 adobe.demdex.net
 0.0.0.1 dpm.demdex.net
 0.0.0.1 adv.dlh.net
 0.0.0.1 ad.doubleclick.net
+0.0.0.1 1295336.fls.doubleclick.net
+0.0.0.1 8392543.fls.doubleclick.net
 0.0.0.1 cm.g.doubleclick.net
 0.0.0.1 googleads.g.doubleclick.net
 0.0.0.1 securepubads.g.doubleclick.net
@@ -471,6 +486,7 @@
 0.0.0.1 munchkin.marketo.net
 0.0.0.1 bam.nr-data.net
 0.0.0.1 dell.hb.omtrdc.net
+0.0.0.1 adobe.tt.omtrdc.net
 0.0.0.1 us-ads.openx.net
 0.0.0.1 c1.popads.net
 0.0.0.1 c2.popads.net
@@ -478,8 +494,8 @@
 0.0.0.1 a1.zhanzhang.net
 0.0.0.1 cmp.teads.mgr.consensu.org
 0.0.0.1 smothere.pro
-0.0.0.1 6.adsco.re
 0.0.0.1 adsco.re
+0.0.0.1 6.adsco.re
 0.0.0.1 a.teads.tv
 0.0.0.1 cdn.teads.tv
 0.0.0.1 t.teads.tv
