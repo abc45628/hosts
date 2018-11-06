@@ -3,7 +3,9 @@
 
 
 #dead
+0.0.0.1 tru.am
 0.0.0.1 bshare.optimix.asia
+0.0.0.1 v2.uyan.cc
 0.0.0.1 www.2144.cn
 
 #360ÁªÃË
@@ -43,22 +45,31 @@
 0.0.0.1 j.s11.cn
 0.0.0.1 cre-dp.sina.cn
 0.0.0.1 r.dmp.sina.cn
+0.0.0.1 down.tgjkbx.cn
 0.0.0.1 801.tianya.cn
 0.0.0.1 803.tianya.cn
 0.0.0.1 collect.tianya.cn
 0.0.0.1 dol.tianya.cn
+0.0.0.1 log1.17173.com
 0.0.0.1 flash.2144.com
 0.0.0.1 yeyou.3dmgame.com
+0.0.0.1 pc.5151gj.com
+0.0.0.1 logs.51cto.com
+0.0.0.1 c.aaxads.com
+0.0.0.1 l.aaxads.com
+0.0.0.1 aaxdetect.com
 0.0.0.1 addevent.com
 0.0.0.1 e.dlx.addthis.com
 0.0.0.1 ib.adnxs.com
 0.0.0.1 geo2.adobe.com
 0.0.0.1 adserver-us.adtech.advertising.com
 0.0.0.1 cm.adxvip.com
+0.0.0.1 aa.agkn.com
 0.0.0.1 certify.alexametrics.com
 0.0.0.1 certify-js.alexametrics.com
 0.0.0.1 atanx.alicdn.com
 0.0.0.1 atanx2.alicdn.com
+0.0.0.1 c.amazon-adsystem.com
 0.0.0.1 api.amplitude.com
 0.0.0.1 cdn.amplitude.com
 0.0.0.1 als.baidu.com
@@ -71,16 +82,22 @@
 0.0.0.1 ers.baidu.com
 0.0.0.1 hm.baidu.com
 0.0.0.1 imageplus.baidu.com
+0.0.0.1 pos.baidu.com
 0.0.0.1 cm.pos.baidu.com
 0.0.0.1 wn.pos.baidu.com
-0.0.0.1 pos.baidu.com
+0.0.0.1 api.share.baidu.com
+0.0.0.1 bdimg.share.baidu.com
 0.0.0.1 push.zhanzhang.baidu.com
 0.0.0.1 cpro.baidustatic.com
 0.0.0.1 cpro2.baidustatic.com
 0.0.0.1 dup.baidustatic.com
 0.0.0.1 ecma.bdimg.com
 0.0.0.1 zz.bdstatic.com
+0.0.0.1 c.betrad.com
 0.0.0.1 l.betrad.com
+0.0.0.1 tags.bkrtx.com
+0.0.0.1 stags.bluekai.com
+0.0.0.1 tags.bluekai.com
 0.0.0.1 counter.cnblogs.com
 
 #cnzz
@@ -279,9 +296,11 @@
 0.0.0.1 zvs2.cnzz.com
 0.0.0.1 api.cpcwe.com
 0.0.0.1 new.cpcwe.com
+0.0.0.1 cdn.doubleverify.com
 0.0.0.1 daima.dsxdn.com
 0.0.0.1 gg.dsxdn.com
 0.0.0.1 web-analytics.engagio.com
+0.0.0.1 c.evidon.com
 0.0.0.1 ads.exosrv.com
 0.0.0.1 its.fugetech.com
 0.0.0.1 click.gamersky.com
@@ -298,6 +317,7 @@
 0.0.0.1 tpc.googlesyndication.com
 0.0.0.1 www.googletagmanager.com
 0.0.0.1 www.googletagservices.com
+0.0.0.1 api.growingio.com
 0.0.0.1 ra.gtimg.com
 0.0.0.1 hexagon-analytics.com
 0.0.0.1 static.hotjar.com
@@ -309,15 +329,21 @@
 0.0.0.1 dolphin.deliver.ifeng.com
 0.0.0.1 c0.ifengimg.com
 0.0.0.1 c1.ifengimg.com
+0.0.0.1 secure-us.imrworldwide.com
 0.0.0.1 universal.iper2.com
 0.0.0.1 api.iperceptions.com
 0.0.0.1 universal.iperceptions.com
+0.0.0.1 cm.ipinyou.com
 0.0.0.1 irs01.com
+0.0.0.1 cee1.iteye.com
 0.0.0.1 rabc1.iteye.com
 0.0.0.1 rabc2.iteye.com
 0.0.0.1 ads-a.juicyads.com
 0.0.0.1 adserver.juicyads.com
 0.0.0.1 adm.leju.com
+0.0.0.1 p.liadm.com
+0.0.0.1 c.licasd.com
+0.0.0.1 dlog.liepin.com
 0.0.0.1 ap.lijit.com
 0.0.0.1 px.ads.linkedin.com
 0.0.0.1 app-ab13.marketo.com
@@ -330,6 +356,9 @@
 0.0.0.1 max-l.mediav.com
 0.0.0.1 s3m.mediav.com
 0.0.0.1 static.mediav.com
+0.0.0.1 c.mgid.com
+0.0.0.1 jsc.mgid.com
+0.0.0.1 servicer.mgid.com
 0.0.0.1 g.cn.miaozhen.com
 0.0.0.1 yktd.m.cn.miaozhen.com
 0.0.0.1 wisem-cm.cn.miaozhen.com
@@ -344,6 +373,8 @@
 0.0.0.1 js-agent.newrelic.com
 0.0.0.1 p.nexac.com
 0.0.0.1 imp.optaim.com
+0.0.0.1 srv-2018-11-05-18.config.parsely.com
+0.0.0.1 srv-2018-11-05-18.pixel.parsely.com
 0.0.0.1 www.popoxiu.com
 0.0.0.1 btrace.qq.com
 0.0.0.1 dp3.qq.com
@@ -352,7 +383,13 @@
 0.0.0.1 cm.l.qq.com
 0.0.0.1 tajs.qq.com
 0.0.0.1 trace.qq.com
+0.0.0.1 zn_aah4vz47v491vlf-cbs.siteintercept.qualtrics.com
+0.0.0.1 cdn.revcontent.com
+0.0.0.1 ei.rlcdn.com
+0.0.0.1 idsync.rlcdn.com
+0.0.0.1 iei.rlcdn.com
 0.0.0.1 b.scorecardresearch.com
+0.0.0.1 sb.scorecardresearch.com
 0.0.0.1 cdn.segment.com
 0.0.0.1 sponsor.segmentfault.com
 0.0.0.1 count-server.sharethis.com
@@ -368,14 +405,20 @@
 0.0.0.1 images.sohu.com
 0.0.0.1 pv.sohu.com
 0.0.0.1 api.solvemedia.com
+0.0.0.1 www.summerhamster.com
+0.0.0.1 sumo.com
+0.0.0.1 load.sumome.com
 0.0.0.1 cdn.taboola.com
 0.0.0.1 click.tanx.com
+0.0.0.1 cms.tanx.com
 0.0.0.1 df.tanx.com
 0.0.0.1 ef-dongfeng.tanx.com
 0.0.0.1 et.tanx.com
+0.0.0.1 p.tanx.com
 0.0.0.1 rdstat.tanx.com
 0.0.0.1 beacon.tingyun.com
 0.0.0.1 eki.trafficsan.com
+0.0.0.1 ad.turn.com
 0.0.0.1 syndication.twitter.com
 0.0.0.1 www.vns6489.com
 0.0.0.1 adimg.uve.weibo.com
@@ -397,12 +440,14 @@
 0.0.0.1 c.zlongad.com
 0.0.0.1 api.zol.com
 0.0.0.1 ad.adnet.de
+0.0.0.1 www.sdad.guru
 0.0.0.1 entriedreligible.info
 0.0.0.1 dmx.districtm.io
 0.0.0.1 widget.intercom.io
 0.0.0.1 api.segment.io
 0.0.0.1 js.users.51.la
 0.0.0.1 web2.51.la
+0.0.0.1 s0.2mdn.net
 0.0.0.1 c1.adform.net
 0.0.0.1 ads.csdn.net
 0.0.0.1 img-ads.csdn.net
@@ -413,6 +458,7 @@
 0.0.0.1 dpm.demdex.net
 0.0.0.1 adv.dlh.net
 0.0.0.1 ad.doubleclick.net
+0.0.0.1 cm.g.doubleclick.net
 0.0.0.1 googleads.g.doubleclick.net
 0.0.0.1 securepubads.g.doubleclick.net
 0.0.0.1 stats.g.doubleclick.net
@@ -425,10 +471,15 @@
 0.0.0.1 munchkin.marketo.net
 0.0.0.1 bam.nr-data.net
 0.0.0.1 dell.hb.omtrdc.net
+0.0.0.1 us-ads.openx.net
 0.0.0.1 c1.popads.net
 0.0.0.1 c2.popads.net
 0.0.0.1 serve.popads.net
 0.0.0.1 a1.zhanzhang.net
+0.0.0.1 cmp.teads.mgr.consensu.org
 0.0.0.1 smothere.pro
 0.0.0.1 6.adsco.re
 0.0.0.1 adsco.re
+0.0.0.1 a.teads.tv
+0.0.0.1 cdn.teads.tv
+0.0.0.1 t.teads.tv
