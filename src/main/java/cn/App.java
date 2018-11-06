@@ -2,6 +2,8 @@ package cn;
 
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -27,6 +29,7 @@ import java.util.Set;
 
 
 public class App {
+    private static final Logger log = LoggerFactory.getLogger(App.class);
     private static final Charset CHARSET = Charset.forName("GB2312");
     private static final List<String> urlPartList = new ArrayList<>();
     private static final String local_ip = "0.0.0.1";
@@ -81,7 +84,8 @@ public class App {
 
     /** 输出文件 */
     private static void outputFile() {
-        Path path = Paths.get("hosts");
+//        Path path = Paths.get("hosts");
+        Path path = Paths.get("D:\\码云\\hosts\\hosts");
         try (
                 FileOutputStream fos = new FileOutputStream(path.toFile());
                 FileChannel channel = fos.getChannel();
