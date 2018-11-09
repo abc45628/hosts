@@ -13,6 +13,7 @@
 0.0.0.1 s.lianmeng.360.cn
 0.0.0.1 show.look.360.cn
 0.0.0.1 s.360.cn
+0.0.0.1 rturd103.analysys.cn
 0.0.0.1 static.bshare.cn
 0.0.0.1 dsp.hypers.com.cn
 0.0.0.1 beacon.sina.com.cn
@@ -51,11 +52,13 @@
 0.0.0.1 803.tianya.cn
 0.0.0.1 collect.tianya.cn
 0.0.0.1 dol.tianya.cn
+0.0.0.1 applog.uc.cn
 0.0.0.1 log1.17173.com
 0.0.0.1 flash.2144.com
 0.0.0.1 yeyou.3dmgame.com
 0.0.0.1 pc.5151gj.com
 0.0.0.1 logs.51cto.com
+0.0.0.1 ad.a-ads.com
 0.0.0.1 c.aaxads.com
 0.0.0.1 l.aaxads.com
 0.0.0.1 aaxdetect.com
@@ -65,6 +68,7 @@
 0.0.0.1 ib.adnxs.com
 0.0.0.1 geo2.adobe.com
 0.0.0.1 assets.adobedtm.com
+0.0.0.1 adsrv4k.com
 0.0.0.1 adserver-us.adtech.advertising.com
 0.0.0.1 cm.adxvip.com
 0.0.0.1 aa.agkn.com
@@ -94,6 +98,7 @@
 0.0.0.1 cpro.baidustatic.com
 0.0.0.1 cpro2.baidustatic.com
 0.0.0.1 dup.baidustatic.com
+0.0.0.1 shuttle.bayescom.com
 0.0.0.1 ecma.bdimg.com
 0.0.0.1 zz.bdstatic.com
 0.0.0.1 c.betrad.com
@@ -101,6 +106,7 @@
 0.0.0.1 tags.bkrtx.com
 0.0.0.1 stags.bluekai.com
 0.0.0.1 tags.bluekai.com
+0.0.0.1 boudja.com
 0.0.0.1 counter.cnblogs.com
 
 #cnzz
@@ -299,6 +305,10 @@
 0.0.0.1 zvs2.cnzz.com
 0.0.0.1 api.cpcwe.com
 0.0.0.1 new.cpcwe.com
+0.0.0.1 e.crashlytics.com
+0.0.0.1 settings.crashlytics.com
+0.0.0.1 adsdk.dmzj.com
+0.0.0.1 erebor.douban.com
 0.0.0.1 cdn.doubleverify.com
 0.0.0.1 js.driftt.com
 0.0.0.1 daima.dsxdn.com
@@ -306,6 +316,7 @@
 0.0.0.1 web-analytics.engagio.com
 0.0.0.1 c.evidon.com
 0.0.0.1 ads.exosrv.com
+0.0.0.1 data.flurry.com
 0.0.0.1 its.fugetech.com
 0.0.0.1 click.gamersky.com
 0.0.0.1 db5.gamersky.com
@@ -347,6 +358,7 @@
 0.0.0.1 jsjs.jbzj.com
 0.0.0.1 ads-a.juicyads.com
 0.0.0.1 adserver.juicyads.com
+0.0.0.1 event.ksosoft.com
 0.0.0.1 adm.leju.com
 0.0.0.1 p.liadm.com
 0.0.0.1 c.licasd.com
@@ -363,12 +375,15 @@
 0.0.0.1 max-l.mediav.com
 0.0.0.1 s3m.mediav.com
 0.0.0.1 static.mediav.com
+0.0.0.1 banners.mellowads.com
+0.0.0.1 mellowads.com
 0.0.0.1 c.mgid.com
 0.0.0.1 jsc.mgid.com
 0.0.0.1 servicer.mgid.com
 0.0.0.1 g.cn.miaozhen.com
 0.0.0.1 yktd.m.cn.miaozhen.com
 0.0.0.1 wisem-cm.cn.miaozhen.com
+0.0.0.1 tracking.miui.com
 0.0.0.1 api.mixpanel.com
 0.0.0.1 526-pcc-974.mktoresp.com
 0.0.0.1 ac.mmstat.com
@@ -379,17 +394,24 @@
 0.0.0.1 cmp.network-n.com
 0.0.0.1 js-agent.newrelic.com
 0.0.0.1 p.nexac.com
+0.0.0.1 go.oclasrv.com
 0.0.0.1 imp.optaim.com
 0.0.0.1 cdn.optimizely.com
 0.0.0.1 logx.optimizely.com
 0.0.0.1 srv-2018-11-05-18.config.parsely.com
 0.0.0.1 srv-2018-11-05-18.pixel.parsely.com
 0.0.0.1 www.popoxiu.com
+0.0.0.1 www.ps7894.com
+0.0.0.1 go.pub2srv.com
+0.0.0.1 pushwhy.com
 0.0.0.1 btrace.qq.com
+0.0.0.1 android.bugly.qq.com
 0.0.0.1 dp3.qq.com
 0.0.0.1 i.gdt.qq.com
+0.0.0.1 mi.gdt.qq.com
 0.0.0.1 v.gdt.qq.com
 0.0.0.1 cm.l.qq.com
+0.0.0.1 oth.eve.mdt.qq.com
 0.0.0.1 tajs.qq.com
 0.0.0.1 trace.qq.com
 0.0.0.1 zn_aah4vz47v491vlf-cbs.siteintercept.qualtrics.com
@@ -405,6 +427,7 @@
 0.0.0.1 l.sharethis.com
 0.0.0.1 platform-api.sharethis.com
 0.0.0.1 t.sharethis.com
+0.0.0.1 cdn.siteswithcontent.com
 0.0.0.1 hotword.sogoucdn.com
 0.0.0.1 theta.sogoucdn.com
 0.0.0.1 i.go.sohu.com
@@ -414,6 +437,8 @@
 0.0.0.1 images.sohu.com
 0.0.0.1 pv.sohu.com
 0.0.0.1 api.solvemedia.com
+0.0.0.1 c.statcounter.com
+0.0.0.1 www.statcounter.com
 0.0.0.1 www.summerhamster.com
 0.0.0.1 sumo.com
 0.0.0.1 load.sumome.com
@@ -421,6 +446,7 @@
 0.0.0.1 click.tanx.com
 0.0.0.1 cms.tanx.com
 0.0.0.1 df.tanx.com
+0.0.0.1 ecpm.tanx.com
 0.0.0.1 ef-dongfeng.tanx.com
 0.0.0.1 et.tanx.com
 0.0.0.1 p.tanx.com
@@ -429,10 +455,14 @@
 0.0.0.1 eki.trafficsan.com
 0.0.0.1 ad.turn.com
 0.0.0.1 syndication.twitter.com
+0.0.0.1 alog.umeng.com
+0.0.0.1 alog.umengcloud.com
+0.0.0.1 msg.umengcloud.com
 0.0.0.1 w.usabilla.com
 0.0.0.1 www.vns6489.com
 0.0.0.1 adimg.uve.weibo.com
 0.0.0.1 adobeforums.worldsecuresystems.com
+0.0.0.1 www.xrkfqpbubaq.com
 0.0.0.1 count.atm.youku.com
 0.0.0.1 html.atm.youku.com
 0.0.0.1 ipm.atm.youku.com
@@ -454,6 +484,8 @@
 0.0.0.1 ad.adnet.de
 0.0.0.1 www.sdad.guru
 0.0.0.1 entriedreligible.info
+0.0.0.1 spouscontentdelivery.info
+0.0.0.1 vulevision.info
 0.0.0.1 dmx.districtm.io
 0.0.0.1 widget.intercom.io
 0.0.0.1 api.segment.io
@@ -461,6 +493,8 @@
 0.0.0.1 web2.51.la
 0.0.0.1 s0.2mdn.net
 0.0.0.1 c1.adform.net
+0.0.0.1 d35r45qhjmgs3g.cloudfront.net
+0.0.0.1 dxprljqoay4rt.cloudfront.net
 0.0.0.1 ads.csdn.net
 0.0.0.1 img-ads.csdn.net
 0.0.0.1 re.csdn.net
@@ -492,10 +526,12 @@
 0.0.0.1 c2.popads.net
 0.0.0.1 serve.popads.net
 0.0.0.1 a1.zhanzhang.net
+0.0.0.1 bj1110.online
 0.0.0.1 cmp.teads.mgr.consensu.org
 0.0.0.1 smothere.pro
-0.0.0.1 adsco.re
 0.0.0.1 6.adsco.re
+0.0.0.1 adsco.re
 0.0.0.1 a.teads.tv
 0.0.0.1 cdn.teads.tv
 0.0.0.1 t.teads.tv
+0.0.0.1 jsc.adskeeper.co.uk
