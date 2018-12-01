@@ -1,9 +1,6 @@
 package cn;
 
-import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -14,84 +11,79 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.IdentityHashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Hello world!
- */
 
-
+@SuppressWarnings("unchecked")
 public class App {
-    private static final Logger log = LoggerFactory.getLogger(App.class);
+    private static final boolean test = true;
     private static final Charset CHARSET = Charset.forName("GB2312");
-    private static final List<String> urlPartList = new ArrayList<>();
-    private static final String local_ip = "0.0.0.1";
+    private static final String local_ip = "::";
     private static final String dead_str = "#dead";
+
     private static final List<String> undead = new ArrayList<>();
+    private static final List<String> undeadHostRecord = new ArrayList<>();
     private static final IdentityHashMap<String, Object> undead_urlMapRoot = new IdentityHashMap<>();
+
     private static final List<String> dead = new ArrayList<>();
+    private static final List<String> deadHostRecord = new ArrayList<>();
     private static final IdentityHashMap<String, Object> dead_urlMapRoot = new IdentityHashMap<>();
+
     /** 记录不同域名的共同注释 */
-    private static final Map<String, String> urlGroupComment = new HashMap<>();
-    /** 记录每条记录的注释 */
-    private static final Map<String, String> urlComment = new HashMap<>();
+    private static final Map<String, Set<String>> urlGroupComment = new HashMap<>();
+    private static final Set<String> urlGroupComment_domain = new HashSet<>();
 
     static {
-        urlGroupComment.put("cm.lianmeng.360.cn", "#360联盟");
-        urlGroupComment.put("crs.baidu.com", "#baidu网盟");
-        urlGroupComment.put("c.cnzz.com", "#cnzz");
-        urlGroupComment.put("www.google-analytics.com", "#google");
+        urlGroupComment.put("#友盟", new HashSet<>(Arrays.asList("cnzz.com")));
+        urlGroupComment.put("#谷歌", new HashSet<>(Arrays.asList("google-analytics.com", "googleadservices.com", "googlesyndication.com", "googletagmanager.com")));
+        for (Set<String> value : urlGroupComment.values()) {
+            urlGroupComment_domain.addAll(value);
+        }
     }
+
+    /** 记录每条记录的注释 */
+    private static final Map<String, String> urlComment = new HashMap<>();
 
     private App() {}
 
     public static void main(String[] args) throws IOException {
         readFile();
-        hostToMap(dead, dead_urlMapRoot);
-        hostToMap(undead, undead_urlMapRoot);
 
+        //region 广告部分
+        deadHostToIdentityHashMap(dead, dead_urlMapRoot);
         cleanDuplicateUrl(dead_urlMapRoot);
-        cleanDuplicateUrl(undead_urlMapRoot);
-
         dead.clear();
-        undead.clear();
+        orderByDomain(dead_urlMapRoot, new ArrayList<>(), dead);
+        buildHostRecord(dead, deadHostRecord);
+        //endregion 广告部分
 
-        buildHost1(dead_urlMapRoot, new ArrayList<>(), dead);
-        buildHost1(undead_urlMapRoot, new ArrayList<>(), undead);
-        buildHost2();
-        buildHost3(dead);
-        buildHost3(undead);
-//        System.out.println(new Gson().toJson(dead_urlMapRoot));
-//        System.out.println(new Gson().toJson(undead_urlMapRoot));
-//        System.out.println();
-//        System.out.println(dead);
-//        System.out.println(undead);
+        // region 普通hosts部分
+        buildHostRecord(undead, undeadHostRecord);
+        // endregion 普通hosts部分
 
-        undead.add("\n\n" + dead_str + "\n");
-        undead.addAll(dead);
-
-
-        System.out.println(String.join("", undead));
-        outputFile();
+        System.out.println();
+        outputHostFile();
     }
 
     /** 输出文件 */
-    private static void outputFile() {
-//        Path path = Paths.get("hosts");
-        Path path = Paths.get("D:\\码云\\hosts\\hosts");
+    private static void outputHostFile() {
+        List<String> output = new ArrayList<>(undeadHostRecord);
+        output.add("\n" + dead_str + "\n");
+        output.addAll(deadHostRecord);
+        Path path = test ? Paths.get("hosts1") : Paths.get("hosts");
         try (
                 FileOutputStream fos = new FileOutputStream(path.toFile());
                 FileChannel channel = fos.getChannel();
         ) {
             ByteBuffer buffer = ByteBuffer.allocate(1024 * 4 * 10);
-            String s = String.join("", undead);
+            String s = String.join("", output);
             buffer.put(s.getBytes(CHARSET));
             buffer.flip();
             channel.write(buffer);
@@ -107,8 +99,8 @@ public class App {
             if (s.startsWith("#")) {
                 s = "\n" + s + "\n";
             } else {
-                String urlcomment = MapUtils.getString(urlComment, s, "");
-                s = local_ip + " " + s + urlcomment + "\n";
+//                String urlcomment = MapUtils.getString(urlComment, s, "");
+//                s = local_ip + " " + s + urlcomment + "\n";
             }
             source.add(i, s);
             source.remove(i + 1);
@@ -117,25 +109,45 @@ public class App {
 
     /** 生成host记录 */
     private static void buildHost2() {
-        Set<String> keySet = urlGroupComment.keySet();
-        for (Iterator<String> iterator = keySet.iterator(); iterator.hasNext(); ) {
-            String key = iterator.next();
-            int bestMatch = -1;
-            int i = dead.indexOf(key);
-            if (i == -1) {
-                continue;
-            }
-            dead.add(i, urlGroupComment.get(key));
-//            for (int i = 0; i < dead.size(); i++) {
-//                String s = dead.get(i);
+//        Set<String> keySet = urlGroupComment.keySet();
+//        for (Iterator<String> iterator = keySet.iterator(); iterator.hasNext(); ) {
+//            String key = iterator.next();
+//            int bestMatch = -1;
+//            int i = dead.indexOf(key);
+//            if (i == -1) {
+//                continue;
 //            }
-        }
+////            dead.add(i, urlGroupComment.get(key));
+////            for (int i = 0; i < dead.size(); i++) {
+////                String s = dead.get(i);
+////            }
+//        }
         System.out.println();
     }
 
-    /** 生成host记录 */
-    @SuppressWarnings("unchecked")
-    private static void buildHost1(IdentityHashMap<String, Object> source, List<String> urlPartList, List<String> urlListRoot) {
+    /** 生成真正的hosts记录 */
+    private static void buildHostRecord(List<String> source, List<String> result) {
+        if (source == undead) {
+            for (String s : source) {
+                result.add(s + "\n");
+            }
+        } else {
+            for (String host : source) {
+                String comment = urlComment.get(host);
+                String s = null;
+                if (comment != null) {
+                    s = local_ip + " " + host + " " + comment + "\n";
+                } else {
+                    s = local_ip + " " + host + "\n";
+                }
+                result.add(s);
+            }
+        }
+//        System.out.println();
+    }
+
+    /** 根据域排序 */
+    private static void orderByDomain(IdentityHashMap<String, Object> source, List<String> urlPartList, List<String> urlListRoot) {
         List<String> sourceKey = new ArrayList<>(source.keySet());
         Collections.sort(sourceKey);
         for (int i = 0; i < sourceKey.size(); i++) {
@@ -153,15 +165,15 @@ public class App {
                 urlPartList.remove(urlPartList.size() - 1);
             } else if (o instanceof IdentityHashMap) {
                 urlPartList.add(key);
-                buildHost1((IdentityHashMap<String, Object>) o, urlPartList, urlListRoot);
+                orderByDomain((IdentityHashMap<String, Object>) o, urlPartList, urlListRoot);
                 urlPartList.remove(urlPartList.size() - 1);
             }
         }
+//        System.out.println();
     }
 
 
     /** 去除重复的网址 */
-    @SuppressWarnings("unchecked")
     private static void cleanDuplicateUrl(IdentityHashMap<String, Object> source) {
         List<String> sourceKey = new ArrayList<>(source.keySet());
         Collections.sort(sourceKey);
@@ -203,25 +215,28 @@ public class App {
     }
 
     /** 抽取每条host的URL部分，根据点号分割出每个域 */
-    @SuppressWarnings("unchecked")
-    private static void hostToMap(List<String> source, IdentityHashMap<String, Object> mapSource) {
+    private static void deadHostToIdentityHashMap(List<String> source, IdentityHashMap<String, Object> mapSource) {
+        List<String> urlPartList = new ArrayList<>();
         for (int i = 0; i < source.size(); i++) {
             String hostRecord = source.get(i);
             if (hostRecord.isEmpty() || hostRecord.startsWith("#")) {
                 continue;
             }
-            String[] hr = hostRecord.split(" ");
-            String url = hr[1];
-            if (hr.length == 3) {
-                urlComment.put(url, " " + hr[2]);
+            String[] hr = hostRecord.split("\\s+");//格式:ip 主机 #注释
+            String ip = hr[0];
+            String domain = hr[1];
+            if (hr.length == 3) {//部分host后面跟着#注释
+                String comment = hr[2];
+                urlComment.put(domain, comment);
             }
-            String[] urlPart = url.split("\\.");
 
+            String[] domainPart = domain.split("\\.");
             Map<String, Object> parentMap = mapSource;
-            for (int j = urlPart.length - 1; j >= 0; j--) {
-                String part = getPart(urlPart[j]);
+            for (int j = domainPart.length - 1; j >= 0; j--) {
+                String part = getPart(domainPart[j], urlPartList);//避免同一个层级key重复
                 if (j == 0) {
-                    part = new String(part);
+                    //避免 a.baidu.com  1.a.baidu.com的情况
+                    part = part;
                     parentMap.putIfAbsent(part, part);
                 } else {
                     Map<String, Object> subMap = (Map<String, Object>) parentMap.get(part);
@@ -230,14 +245,14 @@ public class App {
                         parentMap.put(part, subMap);
                     }
                     parentMap = subMap;
-                    subMap = null;
                 }
             }
         }
-        System.out.println();
+//        System.out.println(new Gson().toJson(mapSource));
     }
 
-    private static String getPart(String part) {
+
+    private static String getPart(String part, List<String> urlPartList) {
         int indexOf = urlPartList.indexOf(part);
         if (urlPartList.contains(part)) {
             part = urlPartList.get(indexOf);
@@ -249,8 +264,8 @@ public class App {
 
     /** 将host分成2部分，dead和undead */
     private static void readFile() throws IOException {
-//        Path path = Paths.get("hosts");
-        Path path = Paths.get("C:\\Windows\\System32\\drivers\\etc\\hosts");
+        Path path = test ? Paths.get("hosts") : Paths.get("C:\\Windows\\System32\\drivers\\etc\\hosts");
+
         List<String> list = Files.readAllLines(path, CHARSET);
         boolean isdead = false;
         for (int i = 0; i < list.size(); i++) {
@@ -262,15 +277,19 @@ public class App {
                 isdead = true;
                 continue;
             }
-            if (s.startsWith("#")) {//跳过注释
-                continue;
-            }
             if (isdead) {
+                if (s.startsWith("#")) {//跳过注释
+                    continue;
+                }
                 dead.add(s);
             } else {
                 undead.add(s);
             }
         }
+        if (!isdead) {
+            throw new IllegalArgumentException("没找到广告ip,检查hosts文件");
+        }
         System.out.println();
     }
+
 }
