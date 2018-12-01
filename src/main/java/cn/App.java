@@ -23,7 +23,7 @@ import java.util.Set;
 
 @SuppressWarnings("unchecked")
 public class App {
-    private static final boolean test = true;
+    private static final boolean test = false;
     private static final Charset CHARSET = Charset.forName("GB2312");
     private static final String local_ip = "::";
     private static final String dead_str = "#dead";
@@ -236,7 +236,7 @@ public class App {
                 String part = getPart(domainPart[j], urlPartList);//避免同一个层级key重复
                 if (j == 0) {
                     //避免 a.baidu.com  1.a.baidu.com的情况
-                    part = part;
+                    part += "";//new String(part);
                     parentMap.putIfAbsent(part, part);
                 } else {
                     Map<String, Object> subMap = (Map<String, Object>) parentMap.get(part);
