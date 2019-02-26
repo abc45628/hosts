@@ -1,5 +1,6 @@
 package cn;
 
+import com.google.gson.Gson;
 import org.apache.commons.lang3.StringUtils;
 
 import java.io.FileOutputStream;
@@ -19,10 +20,11 @@ import java.util.IdentityHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.regex.Pattern;
 
 
 @SuppressWarnings("unchecked")
-public class App {
+public class Hosts {
     private static final boolean test = false;
     private static final Charset CHARSET = Charset.forName("GB2312");
     private static final String local_ip = "::";
@@ -32,8 +34,10 @@ public class App {
     private static final List<String> undeadHostRecord = new ArrayList<>();
     private static final IdentityHashMap<String, Object> undead_urlMapRoot = new IdentityHashMap<>();
 
+    /** hosts广告部分每一条记录，不包括注释 */
     private static final List<String> dead = new ArrayList<>();
     private static final List<String> deadHostRecord = new ArrayList<>();
+    /** 和 {@link Hosts#dead} */
     private static final IdentityHashMap<String, Object> dead_urlMapRoot = new IdentityHashMap<>();
 
     /** 记录不同域名的共同注释 */
@@ -46,12 +50,13 @@ public class App {
         for (Set<String> value : urlGroupComment.values()) {
             urlGroupComment_domain.addAll(value);
         }
+
     }
 
     /** 记录每条记录的注释 */
     private static final Map<String, String> urlComment = new HashMap<>();
 
-    private App() {}
+    private Hosts() {}
 
     public static void main(String[] args) throws IOException {
         readFile();
@@ -147,7 +152,7 @@ public class App {
     }
 
     /** 根据域排序 */
-    private static void orderByDomain(IdentityHashMap<String, Object> source, List<String> urlPartList, List<String> urlListRoot) {
+    static void orderByDomain(IdentityHashMap<String, Object> source, List<String> urlPartList, List<String> urlListRoot) {
         List<String> sourceKey = new ArrayList<>(source.keySet());
         Collections.sort(sourceKey);
         for (int i = 0; i < sourceKey.size(); i++) {
@@ -169,12 +174,12 @@ public class App {
                 urlPartList.remove(urlPartList.size() - 1);
             }
         }
-//        System.out.println();
+        System.out.println();
     }
 
 
     /** 去除重复的网址 */
-    private static void cleanDuplicateUrl(IdentityHashMap<String, Object> source) {
+    static void cleanDuplicateUrl(IdentityHashMap<String, Object> source) {
         List<String> sourceKey = new ArrayList<>(source.keySet());
         Collections.sort(sourceKey);
         String curKey = null;
@@ -217,18 +222,48 @@ public class App {
     /** 抽取每条host的URL部分，根据点号分割出每个域 */
     private static void deadHostToIdentityHashMap(List<String> source, IdentityHashMap<String, Object> mapSource) {
         List<String> urlPartList = new ArrayList<>();
+        Pattern pattern = Pattern.compile("\\s+");
+        Pattern pattern1 = Pattern.compile("\\.");
         for (int i = 0; i < source.size(); i++) {
             String hostRecord = source.get(i);
             if (hostRecord.isEmpty() || hostRecord.startsWith("#")) {
                 continue;
             }
-            String[] hr = hostRecord.split("\\s+");//格式:ip 主机 #注释
+            String[] hr = pattern.split(hostRecord);//格式:ip 主机 #注释
             String ip = hr[0];
             String domain = hr[1];
             if (hr.length == 3) {//部分host后面跟着#注释
                 String comment = hr[2];
                 urlComment.put(domain, comment);
             }
+
+            String[] domainPart = pattern1.split(domain);
+            Map<String, Object> parentMap = mapSource;
+            for (int j = domainPart.length - 1; j >= 0; j--) {
+                String part = getPart(domainPart[j], urlPartList);//避免同一个层级key重复
+                if (j == 0) {
+                    //避免 a.baidu.com  1.a.baidu.com的情况
+                    part += "";//new String(part);
+                    parentMap.putIfAbsent(part, part);
+                } else {
+                    Map<String, Object> subMap = (Map<String, Object>) parentMap.get(part);
+                    if (subMap == null) {
+                        subMap = new IdentityHashMap<>();
+                        parentMap.put(part, subMap);
+                    }
+                    parentMap = subMap;
+                }
+            }
+        }
+        System.out.println(new Gson().toJson(mapSource));
+    }
+
+    /** 将每个域名根据点号分割出每个域 */
+    @Deprecated
+    static void hostToIdentityHashMap(List<String> source, IdentityHashMap<String, Object> mapSource) {
+        List<String> urlPartList = new ArrayList<>();
+        for (int i = 0; i < source.size(); i++) {
+            String domain = source.get(i);
 
             String[] domainPart = domain.split("\\.");
             Map<String, Object> parentMap = mapSource;
