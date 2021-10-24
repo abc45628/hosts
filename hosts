@@ -15,7 +15,6 @@
 :: admarket.21cn.com
 :: ad-display.wikawika.xyz
 :: app.i91av.org
-:: bshare.optimix.asia
 :: rpc-php.trafficfactory.biz
 :: app.m10086.cc
 :: hao.360.cn
@@ -31,7 +30,6 @@
 :: www.cdyxf.cn
 :: sp.chemacid.cn
 :: 397c0.admaster.com.cn
-:: wisemedia.cm.admaster.com.cn
 :: rtb.admaster.com.cn
 :: ssv.admaster.com.cn
 :: sbeacon.sina.com.cn
@@ -48,7 +46,6 @@
 :: apm.douyucdn.cn
 :: apmconfig.douyucdn.cn
 :: dotcounter.douyucdn.cn
-:: m.dzdkw9.cn
 :: adv-sv-show.focus.cn
 :: f.focus-res.cn
 :: cmshow.gtimg.cn
@@ -62,12 +59,9 @@
 :: atrace.chelaile.net.cn
 :: logs.chelaile.net.cn
 :: api.muggle.net.cn
-:: api.piclick.cn
 :: www.qchannel01.cn
 :: b.qchannel03.cn
-:: bj.qchannel03.cn
 :: www.qchannel03.cn
-:: play.qs01.cn
 :: m.reachmax.cn
 :: v2.reachmax.cn
 :: sdkapp.mobile.sina.cn
@@ -94,8 +88,6 @@
 :: imgs.jads.co
 :: poweredby.jads.co
 :: cdn.traffic-media.co
-:: alog.umeng.co
-:: au.umeng.co
 :: tjll.091601.com
 :: analytics.163.com
 :: crash.163.com
@@ -103,14 +95,12 @@
 :: clientlog.music.163.com
 :: clientlog3.music.163.com
 :: nex.163.com
-:: cnzz.172internet.com
 :: zpe-klre.18183.com
 :: ssp.1nmob.com
 :: as.2020mustang.com
 :: eclick.360doc.com
 :: recommend.360doc.com
 :: yeyou.3dmgame.com
-:: fpbbdx1.51240.com
 :: gg.51cto.com
 :: gg1.51cto.com
 :: gg2.51cto.com
@@ -345,7 +335,6 @@
 :: s97.cnzz.com
 :: s98.cnzz.com
 :: s99.cnzz.com
-:: sitedb.cnzz.com
 :: v1.cnzz.com
 :: v10.cnzz.com
 :: v11.cnzz.com
@@ -396,14 +385,10 @@
 :: zvs2.cnzz.com
 :: cdn11.contentabc.com
 :: cdn.cquotient.com
-:: e.crashlytics.com
-:: reports.crashlytics.com
-:: settings.crashlytics.com
 :: tobapplog.ctobsnssdk.com
 :: toblog.ctobsnssdk.com
 :: api.demandbase.com
 :: scripts.demandbase.com
-:: analysis-reporting.develenv.com
 :: gx668.dftoutiao.com
 :: sh996.dftoutiao.com
 :: wapactlog.dftoutiao.com
@@ -412,7 +397,6 @@
 :: cdn.doubleverify.com
 :: g.wan.douyu.com
 :: wan.douyu.com
-:: shili.downxia.com
 :: event.api.drift.com
 :: metrics.api.drift.com
 :: web-analytics.engagio.com
@@ -453,7 +437,6 @@
 :: s4.histats.com
 :: sstatic1.histats.com
 :: cdn.hlmiq.com
-:: snew.hqwyarm.com
 :: js.hs-banner.com
 :: 17.huanqiu.com
 :: 21.huanqiu.com
@@ -463,11 +446,6 @@
 :: boardx.huanqiu.com
 :: boardy.huanqiu.com
 :: sdk.conf.igexin.com
-:: a.irs01.com
-:: iqiyi.irs01.com
-:: m.irs01.com
-:: v12-n0802xxu5yo.z.irs01.com
-:: h11-174843030.z1.irs01.com
 :: irs01.com
 :: cee1.iteye.com
 :: rabc1.iteye.com
@@ -479,8 +457,6 @@
 :: tf.jzyx.com
 :: counter.kingsoft.com
 :: datalog.kkmh.com
-:: event.ksosoft.com
-:: uid.ksosoft.com
 :: click.lenovo.com
 :: show.3.mediav.com
 :: 360fenxi.mediav.com
@@ -494,7 +470,6 @@
 :: static.mediav.com
 :: static-ssl.mediav.com
 :: track.mediav.com
-:: i.meitussp.com
 :: norma-external-collect.meizu.com
 :: cm.cn.miaozhen.com
 :: g.dtv.cn.miaozhen.com
@@ -504,8 +479,6 @@
 :: tyaqy.m.cn.miaozhen.com
 :: tytx.m.cn.miaozhen.com
 :: yktd.m.cn.miaozhen.com
-:: ruien-cm.cn.miaozhen.com
-:: wisem-cm.cn.miaozhen.com
 :: web.vortex.data.microsoft.com
 :: wm.mipcdn.com
 :: hot.browser.miui.com
@@ -545,7 +518,6 @@
 :: sf6-ttcdn-tos.pstatp.com
 :: hbopenbid.pubmatic.com
 :: pussl48.com
-:: www.q68.com
 :: js.qajypx.com
 :: masdk.3g.qq.com
 :: analy.qq.com
@@ -559,7 +531,6 @@
 :: ipv4.gdt.qq.com
 :: mi.gdt.qq.com
 :: v.gdt.qq.com
-:: report.huatuo.qq.com
 :: c.l.qq.com
 :: livec.l.qq.com
 :: livem.l.qq.com
@@ -572,12 +543,10 @@
 :: pingma.qq.com
 :: android.rqd.qq.com
 :: sngmta.qq.com
-:: tajs.qq.com
 :: log.tbs.qq.com
 :: trace.qq.com
 :: btrace.video.qq.com
 :: tj.video.qq.com
-:: wspeed.qq.com
 :: rules.quantcount.com
 :: pixel.quantserve.com
 :: secure.quantserve.com
@@ -592,7 +561,6 @@
 :: b.scorecardresearch.com
 :: sb.scorecardresearch.com
 :: sponsor.segmentfault.com
-:: 09img.shaqm.com
 :: pcunionreportlog.shaqm.com
 :: api.simengadx.com
 :: ad.sitemaji.com
@@ -609,7 +577,6 @@
 :: mmg.aty.sohu.com
 :: v.aty.sohu.com
 :: vstat.v.blog.sohu.com
-:: e.changyan.sohu.com
 :: i.go.sohu.com
 :: s.go.sohu.com
 :: txt.go.sohu.com
@@ -639,7 +606,6 @@
 :: rdstat.tanx.com
 :: retcode.taobao.com
 :: tns.simba.taobao.com
-:: sd.taptap.com
 :: report.taptapdada.com
 :: i.tddmp.com
 :: beacon.tingyun.com
@@ -662,10 +628,8 @@
 :: utp-dmp.ucweb.com
 :: alog.umeng.com
 :: ar.umeng.com
-:: au.umeng.com
 :: plbslog.umeng.com
 :: ulogs.umeng.com
-:: uop.umeng.com
 :: alog.umengcloud.com
 :: msg.umengcloud.com
 :: ulogs.umengcloud.com
@@ -680,10 +644,7 @@
 :: daup.uparpu.com
 :: tkup.uparpu.com
 :: hb.vntsm.com
-:: biz.weibo.com
 :: adimg.uve.weibo.com
-:: huatuocode.weiyun.com
-:: huatuospeed.weiyun.com
 :: js.wpnsrv.com
 :: av1.xdrig.com
 :: cloud.xdrig.com
@@ -693,12 +654,10 @@
 :: test.zeus.ad.xiaomi.com
 :: zeus.ad.xiaomi.com
 :: data.game.xiaomi.com
-:: ppurifier.game.xiaomi.com
 :: app.migc.xiaomi.com
 :: abtest.mistat.xiaomi.com
 :: data.mistat.xiaomi.com
 :: wan.xlyouxi.com
-:: cc.xtgreat.com
 :: main.xumobi.com
 :: live.xunlei.com
 :: www.xxmh148.com
@@ -707,13 +666,11 @@
 :: image.yaoyl.com
 :: js.yaoyl.com
 :: plasset.yaoyl.com
-:: dxbn.ydmwifi.com
 :: js.yixui.com
 :: img-nos.yiyouliao.com
 :: tfw.ymima360.com
 :: gorgon.youdao.com
 :: bsv.atm.youku.com
-:: count.atm.youku.com
 :: html.atm.youku.com
 :: ipm.atm.youku.com
 :: cm.miaozhen.atm.youku.com
@@ -801,12 +758,10 @@
 :: ads.wakamoment.tk
 :: r.alimc1.top
 :: sc.alimc3.top
-:: s.fishmbk.top
 :: cm.adskeeper.co.uk
 :: s-img.adskeeper.co.uk
 :: jsc.traffic-media.co.uk
 :: servicer.traffic-media.co.uk
-:: m.fjtgyxa.vip
 :: dw.appupdate1.xyz
 :: ad-channel.wikawika.xyz
 :: www.zxdyj.xyz
